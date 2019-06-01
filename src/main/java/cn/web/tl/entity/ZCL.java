@@ -7,4 +7,5 @@ package cn.web.tl.entity;
 public class ZCL {
     private  String name;
     private int age;
+    private  int gender;
 }

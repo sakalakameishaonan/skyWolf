@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.web.tl.dao.OrderMapper">
+    <select id="getOrderBycondition"  parameterType="map" resultMap="orderDesc">
+        select user_order.*,game.gameName,shop.shopname
+        from user_order,shop,game
+        where user_order.shopId=shop.shopid
+        and user_order.gameId=game.gameId
+        <if test="id != null">
+            and user_order.id=#{id}
+        </if>
+        <if test="userId!=null">
+            and user_order.userId=#{userId}
+        </if>
+        <if test="shopId!=null">
+            and user_order.shopId=#{shopId}
+        </if>
+        <if test="sdate!=null">
+            and user_order.orderdate &gt; #{sdate}
+        </if>
+        <if test="edate!=null">
+            and user_order.orderdate &lt; #{edate}
+        </if>
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="getOrderCount" resultType="int">
+        select count(*)
+        from user_order,shop,game
+        where user_order.shopId=shop.shopid
+        and user_order.gameId=game.gameId
+        <if test="id != null">
+            and user_order.id=#{id}
+        </if>
+        <if test="userId!=null">
+            and user_order.userId=#{userId}
+        </if>
+        <if test="shopId!=null">
+            and user_order.shopId=#{shopId}
+        </if>
+        <if test="sdate!=null">
+            and user_order.orderdate &gt; #{sdate}
+        </if>
+        <if test="edate!=null">
+            and user_order.orderdate &lt; #{edate}
+        </if>
+    </select>
+
+    <select id="queryDetails" resultMap="detailsMap">
+
+    </select>
+
+    <resultMap id="detailsMap" type="cn.web.tl.entity.Order">
+
+    </resultMap>
+
+    <resultMap id="orderDesc" type="cn.web.tl.entity.Order">
+        <id property="id" column="id"/>
+        <result property="price" column="price"/>
+        <result property="state" column="state"/>
+        <association property="game" javaType="cn.web.tl.entity.Game">
+            <result property="gameName" column="gameName"/>
+        </association>
+        <association property="shop" javaType="cn.web.tl.entity.Shop">
+            <result property="shopname" column="shopname"/>
+        </association>
+    </resultMap>
+</mapper>

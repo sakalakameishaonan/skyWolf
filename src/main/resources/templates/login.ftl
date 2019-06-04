@@ -6,7 +6,7 @@
  
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <TITLE>登录页面</TITLE>
-<script type="text/javascript" src="/static/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.min.js"></script>
  
 <STYLE>
 body{
@@ -62,7 +62,7 @@ a{
 	width: 97px;
 	height: 92px;
 	position: absolute;
-	top: -93px;
+	top: -87px;
 	left: 140px;
 }
 .left_hand{
@@ -169,11 +169,11 @@ $(function(){
     <form action="/doLogin" method="post">
         <P style="padding: 30px 0px 10px; position: relative;">
             <span class="u_logo"></span>
-            <input class="ipt" type="text" placeholder="请输入用户名" name="account" value="">
+            <input class="ipt" type="text" placeholder="请输入用户名" name="account">
         </P>
         <P style="position: relative;">
             <span class="p_logo"></span>
-            <input class="ipt" id="password" type="password" placeholder="请输入密码"  name="password" value="">
+            <input class="ipt" id="password" type="password" placeholder="请输入密码" name="password">
         </P>
     </form>
     <div style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">

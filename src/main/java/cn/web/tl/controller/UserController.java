@@ -4,7 +4,6 @@ import cn.web.tl.entity.User;
 import cn.web.tl.service.UserService;
 import cn.web.tl.util.Constants;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,7 +12,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 @Controller
-//@RequestMapping("/sys")
+@RequestMapping("/sys")
 public class UserController {
 
     @Resource
@@ -24,13 +23,13 @@ public class UserController {
         User user = service.login(account, pwd);
         if (user != null){
             session.setAttribute(Constants.USER_SESSION,account);
-            return "redirect:/sys/main.html";
+            return "/admin/admin";
         } else {
             return "login";
         }
     }
 
-    @RequestMapping(value = "/sys/main.html")
+    @RequestMapping(value = "/main")
     public String log(){
         return "/admin/admin";
     }

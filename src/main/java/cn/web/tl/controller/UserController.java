@@ -33,4 +33,9 @@ public class UserController {
     public String log(){
         return "admin";
     }
+
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
 }

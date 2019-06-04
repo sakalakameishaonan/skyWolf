@@ -32,7 +32,7 @@ public class UserController {
 
     @RequestMapping(value = "/sys/main.html")
     public String log(){
-        return "admin";
+        return "/admin/admin";
     }
 
     @RequestMapping("/")

@@ -6,9 +6,7 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -20,8 +18,8 @@ import java.util.List;
  * @date 2019-06-02 - 13:43
  */
 @Configuration
-@EnableWebSecurity
-public class myConfig  extends WebSecurityConfigurerAdapter implements WebMvcConfigurer{
+
+public class myConfig   implements WebMvcConfigurer{
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //将所有/static/** 访问都映射到classpath:/static/ 目录下
@@ -42,11 +40,7 @@ public class myConfig  extends WebSecurityConfigurerAdapter implements WebMvcCon
         converters.add(fastConverter);
     }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().permitAll().and().logout().permitAll();
 
-    }
 
 
 }

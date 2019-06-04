@@ -1,0 +1,93 @@
+#fList {
+	position: fixed;
+	width: 300px;
+	height: 700px;
+	right: 0px;
+	z-index: 2;
+	display: none;
+	text-align: center;
+	box-shadow: 0px 2px 14px #293846;
+	margin: 12px;
+}
+
+}
+#friendShow {
+	margin: 0 auto;
+	width: 90%;
+}
+
+#filter {
+	width: 50px;
+	padding: 2px 0px;
+	border-radius: 9px;
+	margin: 0px;
+}
+
+#friendPageLimit {
+	height: 40px;
+}
+
+#domsgTop {
+	background: #293846;
+	height: 30px;
+}
+
+#domsgReceive {
+    border-bottom: 1px solid #e6e6e6;
+    height: 320px;
+    width: 330px;
+overflow-y:auto;
+}
+
+#domsgReceiveUser{
+	
+	border-left: 1px solid #e6e6e6;
+	
+}
+#domsgSendUser{
+	
+	border-left: 1px solid #e6e6e6;
+}
+#domsgSend {
+    width: 330px;
+    height: 180px;
+    vertical-align: top;
+    text-align: right;
+}
+
+
+
+#closeDoMsg {
+width: 52px;
+padding: 2px 6px;
+border-radius: 0px;
+margin: 10px;
+margin-right: 2px;
+background: #fff;
+border: 1px solid #e6e6e6;
+}
+
+#sendDoMsg {
+width: 52px;
+padding: 2px 6px;
+border-radius: 0px;
+margin: 10px;
+margin-left: 2px;
+background: #293846;
+border: 1px solid #e6e6e6;
+}
+
+#searchName{
+	
+width: 255px;
+padding: 4px 10px;
+border-radius: 6px;
+margin: 10px;
+	
+}
+
+#fidTd{
+	
+	
+	
+}

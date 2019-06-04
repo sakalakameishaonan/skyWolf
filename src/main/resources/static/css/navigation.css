@@ -1,0 +1,28 @@
+﻿#navigation{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+#navigation tr{
+	border: 1px solid #f4f6f9;
+}
+#navigation td{
+	width:1500px;
+	line-height: 28px;
+	
+	text-indent: 40px;
+	font-family: "微软雅黑";
+	font-size: 17px;
+}
+.radio{
+	display: inline-block;
+	padding: 0px 40px 0px 0px;
+}
+.radio:hover{
+	background-color: #eee;
+  
+}
+input[type="radio"]:checked + .radio{
+    background-color: #eee;
+   
+}

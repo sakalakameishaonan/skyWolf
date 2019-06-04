@@ -1,0 +1,70 @@
+
+	  .reg-box{
+		
+		  border:1px #eee solid;
+		  border-top:0 none;
+		  font-size:14px;
+	  }
+	  .item{
+		  line-height:21px;
+		  padding-top:10px;
+		
+
+	  }
+
+	
+
+	  .reg-box h3{
+	
+		    height: 40px;
+    line-height: 35px;
+    background: #f7f7f7;
+    padding-left: 10px;
+    border-top: 1px #d7d7d7 solid;
+    font-size: 20px;
+    font-weight: normal;
+	  }
+
+	  .item > label{
+		  display:inline-block;
+		  padding-left:9px;
+		  text-align:left;
+		  color:#999;
+		  vertical-align: top;
+		  margin-bottom: 5px;
+	  }
+	  label > span{
+		  color:#f00;
+		  padding-right: 2px;
+		  vertical-align: sub;
+	  }
+	  .item> label.type{
+		  width:auto;
+	  }
+	  .reg-box input[type="button"]{
+		  width:100px;
+		  height:36px;
+		  line-height:36px;
+		  font-size:16px;
+		  border:0 none;
+		  background:#293846;
+		  color:#fff;
+		  cursor:pointer;
+	      text-align: center;
+	      margin-left:88px;
+	  }
+	  .reg-box input[type="button"]:hover{
+		  background:#345f73; 
+	  }
+  
+  
+  
+input{
+	
+	text-align: left;
+	padding-left:2px;
+}
+
+
+  
+  

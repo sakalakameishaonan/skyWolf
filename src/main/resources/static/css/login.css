@@ -1,0 +1,97 @@
+
+a:link {
+	color:  #fff;
+}
+
+a:hover {
+	color:  #fff;
+}
+
+a:active {
+	color:  #fff;
+}
+
+a:visited {
+	color:  #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+.mTop {
+	vertical-align: top;
+	height: 100px;
+	background: linear-gradient(to bottom, #293846 , #345f73);   
+	color: #fff;
+	padding-top: 2px;
+}
+
+.lspan {
+	margin-left: 5px;
+}
+
+.rspan {
+	margin-right: 5px;
+	display: inline-block;
+	float: right;
+	margin-right: 8px;
+}
+
+input {
+	width: 185px;
+	padding: 4px 10px;
+	border-radius: 6px;
+	margin: 10px;
+}
+
+.l_td {
+	width: 110px;
+	height: 60px;
+	text-align: right;
+}
+
+.m_td {
+	width: 110px;
+	height: 60px;
+	text-align: center;
+}
+
+.space {
+	height: 35px;
+}
+
+table {
+	width: 100%;
+}
+
+.button {
+	width: 55px;
+}
+
+.checkBox {
+	width: 10px;
+	padding: 0;
+	border-radius: 0px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: -2px;
+}
+
+.headImg {
+	border: 1px solid #e6e6e6;
+	border-radius: 50%;
+	width: 76px;
+	height: 76px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -38px;
+	top: 60px;
+}

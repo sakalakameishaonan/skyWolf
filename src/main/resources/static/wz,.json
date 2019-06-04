@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "errormsg": "",
+  "errorid": "",
+  "result": "[{\"LevelName\":\"青铜三\",\"LevelId\":1},{\"LevelName\":\"青铜二\",\"LevelId\":2},{\"LevelName\":\"青铜一\",\"LevelId\":3},{\"LevelName\":\"白银三\",\"LevelId\":4},{\"LevelName\":\"白银二\",\"LevelId\":5},{\"LevelName\":\"白银一\",\"LevelId\":6},{\"LevelName\":\"黄金四\",\"LevelId\":7},{\"LevelName\":\"黄金三\",\"LevelId\":8},{\"LevelName\":\"黄金二\",\"LevelId\":9},{\"LevelName\":\"黄金一\",\"LevelId\":10},{\"LevelName\":\"铂金四\",\"LevelId\":11},{\"LevelName\":\"铂金三\",\"LevelId\":12},{\"LevelName\":\"铂金二\",\"LevelId\":13},{\"LevelName\":\"铂金一\",\"LevelId\":14},{\"LevelName\":\"钻石五\",\"LevelId\":15},{\"LevelName\":\"钻石四\",\"LevelId\":16},{\"LevelName\":\"钻石三\",\"LevelId\":17},{\"LevelName\":\"钻石二\",\"LevelId\":18},{\"LevelName\":\"钻石一\",\"LevelId\":19},{\"LevelName\":\"星耀五\",\"LevelId\":20},{\"LevelName\":\"星耀四\",\"LevelId\":21},{\"LevelName\":\"星耀三\",\"LevelId\":22},{\"LevelName\":\"星耀二\",\"LevelId\":23},{\"LevelName\":\"星耀一\",\"LevelId\":24},{\"LevelName\":\"最强王者\",\"LevelId\":25}]"
+}

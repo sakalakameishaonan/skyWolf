@@ -1,0 +1,59 @@
+*{margin: 0;padding: 0;}
+body{overflow-x: hidden;}
+.nav-a:link {color: #777 } 
+.nav-a:visited {color: #777} 
+.nav-a:hover {color: red;} 
+.nav-a:active {color: #777} 
+.nav-a {
+	text-decoration:none;
+}
+#nav-n{width:1391px;margin:0 auto;background: #fff;}
+#nav{
+	margin-top:6px;
+	background: #f4f6f9;
+}
+#top-nav a:link {color: #777 } 
+.sspan{
+	padding: 0px 4px;cursor: pointer;
+}
+#top-nav a:visited {color: #777} 
+
+#top-nav a:hover {color: red;} 
+
+#top-nav a:active {color: #777} 
+.hr{background-color:#eee;border-bottom: 2px solid #178A3D;width: 100%;clear: both;}
+
+#main{width: 1520px;height: 950px;    margin: 0 auto;background: #f4f6f9; }
+#page{width: 1520px;}
+#main li{float: left;list-style: none;}
+#main ul{margin-left:83px;}
+.p{border: 1px solid #ddd;width: 250px;height: 450px;margin: 10px;}
+.p:hover{box-shadow:0 0 5px #ccc;}
+.p-img{width: 220px;height: 220px;margin: 15px;}
+.p-shop{margin:10px 10px 5px 10px;width: 220px;height: 20px;text-align: center;}
+.p-shop a{color: #0063DC;text-decoration: none;font-weight: bolder;}
+.p-con{margin: 5px 5px 5px 15px;valign: center;}
+.p-con-sp{background-color: red;color: white;width: 40px;text-align: center;display: inline-block;}
+.p-con a{display:inline-block;text-align:center;width:70px;text-decoration:none;font-size:15px;color:#e23a3a;border: 1px solid #e23a3a;border-radius: 20px;}
+.p-operate{padding-top: 10px;}
+.p-operate a{color:#0063DC;text-decoration: none;}
+.p-operate span{text-indent:11px;font-size:20px;color: red;margin-left:13px;border: 1px solid #ddd;display:inline-block;width: 100px;}
+.p-operate span:hover{border: 1px solid yellowgreen;background:radial-gradient(yellowgreen,greenyellow)}
+.page-button{border:1px solid yellowgreen;display:inline-block;width:100px;font-size: 18px;text-decoration: none;color: #777;}
+#pageP{color: #777;font-size: 20px;text-align:center;}
+.page-button:hover{background:radial-gradient(yellowgreen,yellowgreen);color:white;}
+#pageP input{width:60px;font-size: 18px;text-align: center;}
+#page{margin-bottom: 10px;margin: 0 auto;}
+.page-button-p{width: 50px;}
+.page-button i{color: #777;font-style: normal;font-size: 16px;line-height: 18px;}
+.p-desc a{font-size: 15px;color: #666;}
+.p-desc a:hover{color: red;}
+.p-desc{margin: 5px 15px 5px 15px;}
+#footer p{text-align: center;padding-top: 20px;}
+#footer{margin-top:4px;padding-bottom: 20px;}
+.footer-a{color: black;text-decoration: none;}
+.footer-a:hover{color: #f30213;}
+
+
+
+

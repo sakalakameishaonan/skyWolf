@@ -62,7 +62,7 @@ a{
 	width: 97px;
 	height: 92px;
 	position: absolute;
-	top: -87px;
+	top: -93px;
 	left: 140px;
 }
 .left_hand{

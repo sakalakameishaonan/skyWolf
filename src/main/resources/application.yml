@@ -32,8 +32,6 @@ spring:
     expose-session-attributes: true
     request-context-attribute: request
     allow-request-override: false
-  mvc:
-    static-path-pattern: /static/**
 
 
 server:

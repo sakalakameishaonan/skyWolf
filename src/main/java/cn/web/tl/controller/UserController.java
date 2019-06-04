@@ -32,7 +32,6 @@ public class UserController {
     @RequestMapping(value = "/main")
     public String log(){
         return "/admin/admin";
-        //ssssss
     }
 
 

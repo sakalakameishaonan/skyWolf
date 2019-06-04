@@ -169,11 +169,11 @@ $(function(){
     <form action="/doLogin" method="post">
         <P style="padding: 30px 0px 10px; position: relative;">
             <span class="u_logo"></span>
-            <input class="ipt" type="text" placeholder="请输入用户名" value="">
+            <input class="ipt" type="text" placeholder="请输入用户名" name="account" value="">
         </P>
         <P style="position: relative;">
             <span class="p_logo"></span>
-            <input class="ipt" id="password" type="password" placeholder="请输入密码" value="">
+            <input class="ipt" id="password" type="password" placeholder="请输入密码"  name="password" value="">
         </P>
     </form>
     <div style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">

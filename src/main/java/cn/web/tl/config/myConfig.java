@@ -19,13 +19,6 @@ import java.util.List;
  */
 @Configuration
 public class myConfig   implements WebMvcConfigurer{
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        //将所有/static/** 访问都映射到classpath:/static/ 目录下
-        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
-        registry.addResourceHandler("/webjars/**") .addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {

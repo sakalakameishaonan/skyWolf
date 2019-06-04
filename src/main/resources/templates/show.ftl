@@ -1,80 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
+    <title></title>
 </head>
 <body>
-<div id="nav">
-    <div class="recommend">
-        <div class="hot_sales">
-            代练明星
-        </div>
-        <div class="hot_sales_goods">
-            <div class="hot_sales_goods_detail_1">
-                <div class="hot_sales_goods_img">
-                    <img src="/static/imgs/mx/1.jpg"style="width:313px;height:140px;"/>
-                </div>
 
-            </div>
-            <div class="hot_sales_goods_detail_2">
-                <div class="hot_sales_goods_img">
-                    <img src="/static/imgs/mx/2.jpg" style="width:313px;height:140px;"/>
-                </div>
-
-            </div>
-            <div class="hot_sales_goods_detail_3">
-                <div class="hot_sales_goods_img">
-                    <img src="/static/imgs/mx/3.jpg"style="width:313px;height:140px;"/>
-                </div>
-
-            </div>
-        </div>
-        <div class="hot_acts">
-            最新完成
-        </div>
-        <div class="hot_acts_goods">
-            <ul style="padding-left:10px;">
-                <li>u***黄金--王者 ★★</li>
-                <li>s***白银--王者 ★★★</li>
-                <li>e***钻石--王者 ★★★★★</li>
-                <li>s***星耀--王者 ★★★★</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="nav-n" style="background:#f4f6f9;margin-top: 10px;">
-        <table id="navigation">
-
-                <tr>
-                    <td style=" text-indent: 0px;color: #178A3D;font-size: 24px;font-weight: 900;font-family: STKaiti;">
-                       店铺筛选
-
-                    </td>
-                    <td style="
-                        color: #178A3D;
-                        font-size: 14px;
-                        font-weight: 600;
-                        font-family: STKaiti;text-align: right;padding-right: 10px;"><span class="sspan">人气↑</span> <span class="sspan">最新↑</span><span class="sspan"> 热度↑</span></td>
-                </tr>
-
-
-
-
-
-        </table>
-    </div>
-    <div class="hr"></div>
-</div>
 <div id="main">
     <ul>
         <li>
             <div class="p">
                 <div class="p-img">
                     <a  target="_blank" href="">
-                        <img width="220" height="220" src="/static/imgs/shop/x3.jpg" title="天狼工作室：专业代练平台">
+                        <img alt=""  width="220" height="220" src="/static/imgs/shop/x3.jpg" title="天狼工作室：专业代练平台">
                     </a>
                 </div>
                 <div class="p-shop">
@@ -93,11 +31,11 @@
                 </div>
                 <div class="p-con">
                     <span class="p-con-sp">好评</span>
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
                 </div>
                 <div class="p-con">
                     <span class="p-con-sp">主营</span>
@@ -114,7 +52,7 @@
             <div class="p">
                 <div class="p-img">
                     <a  target="_blank" href="">
-                        <img width="220" height="220" src="/static/imgs/shop/ppap.jpg" title="天狼工作室：专业代练平台">
+                        <img alt="" width="220" height="220" src="/static/imgs/shop/ppap.jpg" title="天狼工作室：专业代练平台">
                     </a>
                 </div>
                 <div class="p-shop">
@@ -133,11 +71,11 @@
                 </div>
                 <div class="p-con">
                     <span class="p-con-sp">好评</span>
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
                 </div>
                 <div class="p-con">
                     <span class="p-con-sp">主营</span>
@@ -154,7 +92,7 @@
             <div class="p">
                 <div class="p-img">
                     <a  target="_blank" href="">
-                        <img width="220" height="220" src="/static/imgs/shop/ag.jpg" title="天狼工作室：专业代练平台">
+                        <img alt="" width="220" height="220" src="/static/imgs/shop/ag.jpg" title="天狼工作室：专业代练平台">
                     </a>
                 </div>
                 <div class="p-shop">
@@ -173,11 +111,11 @@
                 </div>
                 <div class="p-con">
                     <span class="p-con-sp">好评</span>
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
-                    <img width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
+                    <img alt="" width="20" height="20" src="/static/imgs/ico/star-icon.png">
                 </div>
                 <div class="p-con">
                     <span class="p-con-sp">主营</span>
@@ -194,7 +132,7 @@
             <div class="p">
                 <div class="p-img">
                     <a  target="_blank" href="">
-                        <img width="220" height="220" src="/static/imgs/shop/Alan.jpg" title="天狼工作室：专业代练平台">
+                        <img alt="" width="220" height="220" src="/static/imgs/shop/Alan.jpg" title="天狼工作室：专业代练平台">
                     </a>
                 </div>
                 <div class="p-shop">
@@ -484,8 +422,8 @@
         页
         <a href="javascript:void(0)" class="page-button">跳&nbsp;转</a>
     </p>
+    <div class="hr" id="footer-hr"></div>
 </div>
-
 
 </body>
 </html>

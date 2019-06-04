@@ -6,6 +6,7 @@ import cn.web.tl.util.Constants;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
@@ -18,7 +19,7 @@ public class UserController {
     @Resource
     private UserService service;
 
-    @PostMapping(value = "/doLogin")
+    @RequestMapping(value = "/doLogin",method = RequestMethod.POST)
     public String doLogin(@RequestParam("account") String account, @RequestParam("password") String pwd, HttpSession session){
         User user = service.login(account, pwd);
         if (user != null){

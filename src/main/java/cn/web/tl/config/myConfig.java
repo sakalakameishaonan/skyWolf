@@ -6,7 +6,6 @@ import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
-
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -23,9 +22,9 @@ public class myConfig   implements WebMvcConfigurer{
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //将所有/static/** 访问都映射到classpath:/static/ 目录下
-        registry.addResourceHandler("/static/").addResourceLocations("classpath:/static/**");
-        registry.addResourceHandler("/templates/").addResourceLocations("classpath:/templates/**");
-        registry.addResourceHandler("/webjars/") .addResourceLocations("classpath:/META-INF/resources/webjars/**");
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/templates/");
+        registry.addResourceHandler("/webjars/**") .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 
     @Override

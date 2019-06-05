@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;}
-.top-ipt{width: 100%;}
+.top-ipt{width: 100%;height: auto;}
 .top-ipt-search{width: 75%;}
 .top-ipt input{border: 1px steelblue solid;height: 25px;border-radius: 3px;text-align: center;margin: 10px;width: 15%;}
 #btn{height: 28px;background: lightsteelblue/*#345f73*/;border: none;line-height: 28px;color: white;width: 5%;}
@@ -19,5 +19,5 @@
 }
 #page-div [type='button']:hover{cursor: pointer;}
 #page-div input{width: 30px;}
-td{margin: 0;padding: 0;}
 #rest{height: 28px;background: lightsteelblue/*#345f73*/;border: none;line-height: 28px;color: white;width: 5%;}
+table,input{font-size: 16px;}

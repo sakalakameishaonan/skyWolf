@@ -14,13 +14,7 @@ public interface OrderMapper {
 
     List<Order> getOrderBycondition(@Param("id") Long id, @Param("userId") Long userId,
                                     @Param("shopId") Long shopId, @Param("sdate") Date sdate,
-                                    @Param("edate") Date edate, @Param("pageNum") Integer pageNum,
-                                    @Param("pageSize") Integer pageSize
-    );
-
-    Integer getOrderCount(@Param("id") Long id, @Param("userId") Long userId,
-                          @Param("shopId") Long shopId,
-                          @Param("sdate") Date sdate, @Param("edate") Date edate);
+                                    @Param("edate") Date edate);
 
 
     List<Order> queryDetails(@Param("id") Long id);

@@ -29,7 +29,7 @@
 
         <div id="adminInfo"></div>
 
-        <div id="leftList" class="white" onClick="checkSession()">
+        <div id="leftList" class="white" <#--onClick="checkSession()"-->>
             <ul id="home"class="mt-5"><li class="mt-2" onClick="javascript:history.go(0)">Home(主页)</li></ul>
             <ul id="equip" ><li class="mt-2">店铺管理</li></ul>
             <div id="equipDiv" class="none mt-2">
@@ -58,13 +58,10 @@
         </div>
     </div>
     <div id="right">
-        <iframe  name="iframe">
+        <iframe  name="iframe" src="/sys/main">
         </iframe>
     </div>
 </div>
 <script type="text/javascript" src="/js/admin.js"></script>
-<script type="text/javascript">
-    iframe.location.href="main.html";
-</script>
 </body>
 </html>

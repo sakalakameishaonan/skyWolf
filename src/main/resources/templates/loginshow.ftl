@@ -35,24 +35,24 @@
 
 
 
-            $(function () {
-                    var msg = "${msg}";
-                    if (msg.length>0) {
-                        $(".resultname").html(msg).css("color","red");
-                        $("input[name='username']").focus(function () {
-                            $(this).val("");
-                            $(".resultname").html("");
-                        });
-                        $("input[name='pwd']").focus(function () {
-                            $(this).val("");
-                            $(".resultname").html("");
-                        });
-
-                    }
-
+        $(function () {
+                var msg = "${msg}";
+                if (msg.length>0) {
+                    $(".resultname").html(msg).css("color","red");
+                    $("input[name='username']").focus(function () {
+                        $(this).val("");
+                        $(".resultname").html("");
+                    });
+                    $("input[name='pwd']").focus(function () {
+                        $(this).val("");
+                        $(".resultname").html("");
+                    });
 
                 }
-            );
+
+
+            }
+        );
 
     </script>
 
@@ -61,13 +61,11 @@
 
 </head>
 <body>
+<div class="login_title">
+    <p><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>天狼游戏代练网</p>
+</div>
 <div class="hf">
     <div class="login">
-        <div class="login_title">
-
-            <p><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>天狼游戏代练网</p>
-        </div>
-
         <div class="login_main">
             <div class="main_left"></div>
             <div class="main_right">
@@ -80,24 +78,19 @@
                     <div class="password">
                         <img src="/loginshow/password.png" alt="">
                         <input type="text" class="password" name="pwd" placeholder="请输入密码">
-
                     </div>
-
-
-
                     <div class="yes_login">
-
                         <p align="center" class="resultname"> </p>
                         <a href="#" onclick="document.getElementById('myform').submit();return false;">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                     </div>
-                    <div class="threeLogin"><span>其他方式登录</span><a class="nqq" href="javascript:;"></a><a class="nwx"
-                                                                                                         href="javascript:;"></a>
+                    <div class="threeLogin"><span>其他方式登录</span>&nbsp;&nbsp;&nbsp;<a class="nqq" href="javascript:;"></a><a class="nwx"
+                                                                                                                           href="javascript:;"></a>
                         <!--<a class="nwb"></a>-->
                     </div>
                     <p class="good-tips marginB10">
-                        <a class="fr" href="#">忘记密码？</a>
-                        <span>还没有账号？<span>
-                        <a href="#" target="_blank" id="btnRegister">立即注册</a>
+                         <span>还没有账号？<span>
+                        <a href="#" target="_blank" id="btnRegister">立即注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <a class="fr" href="#">忘记密码？</a>
                     </p>
                 </form>
             </div>

@@ -24,6 +24,7 @@ input {
 
 }
 
+body{size: A3}
 select, input {
     vertical-align: middle; /*输入字居中显示*/
 }
@@ -72,31 +73,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
 }
 
-.hf{
-    width:100%;
-    height: 337px;
-    background-color: #345f73;
-    left:50%;
-    top:50%;
-    margin-top: 263px;
-}
-
-/*login 开始*/
-.hf>.login{
-
-
-    position: absolute;
-    left:50%;
-    top:50%;
-    margin-left: -500px;
-    margin-top: -250px;
-
-}
-.hf>.login>.login_title{
+.login_title{
     height: 80px;
     text-align: center;
+    margin-top: 250px;
+    margin-left: 300px;
 }
-.hf>.login>.login_title>p{
+.login_title>p{
     color:black;
     font-size: 40px;
     font-weight: 600;
@@ -105,6 +88,26 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
+.hf{
+    position: fixed;
+
+
+    width:100%;
+    height: 37%;
+    background-color: #345f73;
+
+
+}
+
+/*login 开始*/
+.hf>.login{
+    left:50%;
+    top:50%;
+
+    margin-left: 450px;
+
+
+}
 .hf>.login>.login_main{
     width: 1000px;
     height: 320px;
@@ -195,29 +198,31 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #0058af;
 }
 .hf>.login>.login_footer{
+    position: absolute;
+    margin-left: 360px;
     text-align: center;
     padding-top: 20px;
+
 }
 .hf>.login>.login_footer>p{
     font-size: 14px;
     color:black;
-    line-height: 30px;
+    line-height: 50px;
 }
 
 a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;cursor:pointer}
 
 
-.fr{float:right}
-
+.good-tips{ text-align:center}
 .good-tips span{color:#6B6B6B;font-size:14px}
 .good-tips .fr{color:#6B6B6B;font-size:14px}
 
 
 .marginB10{margin-bottom:10px}
-.threeLogin{
-
+.threeLogin{text-align:center
 }
-.threeLogin span{color:#6B6B6B;float:left;font-size:14px}
+
+.threeLogin span{color:#6B6B6B;font-size:14px;text-align:center}
 .threeLogin a{display:inline-block;width:20px;height:20px;background:url(../loginshow/login_img.png) no-repeat;vertical-align:middle;margin-left:15px;cursor:pointer}
 .threeLogin .nqq{background-position:0 0}
 .threeLogin .nqq:hover{background-position:0 -20px}

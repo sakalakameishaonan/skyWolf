@@ -30,6 +30,7 @@ public class UserShowController {
             model.addFlashAttribute("msg","账号或密码错误，请重新输入");
             return "redirect:/tologin";
         }else if (account.getPassword().equals(pwd)){
+            System.out.println("2222"+account);
             model.addAttribute("ulist",account);
             return "show";
         }else {

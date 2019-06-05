@@ -37,7 +37,7 @@ public class Account {
     private Date bantime;
     private String banReason;
     private Date Unblocktime;
-    private String bansnum;
+    private Integer bansnum;
     private String qqopenid;
     private Integer userid;
 
@@ -153,11 +153,11 @@ public class Account {
         Unblocktime = unblocktime;
     }
 
-    public String getBansnum() {
+    public Integer getBansnum() {
         return bansnum;
     }
 
-    public void setBansnum(String bansnum) {
+    public void setBansnum(Integer bansnum) {
         this.bansnum = bansnum;
     }
 

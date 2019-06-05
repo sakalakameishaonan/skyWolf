@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author dxq
  * @date 2019-05-31 - 10:46
  */
+@Component
 public class LoginHandlerInterceptor implements HandlerInterceptor {
 
     private Logger logger = LoggerFactory.getLogger(LoginHandlerInterceptor.class);

@@ -1,6 +1,7 @@
 package cn.web.tl.service;
 
 import cn.web.tl.entity.Order;
+import com.github.pagehelper.PageInfo;
 
 import java.util.Date;
 import java.util.List;
@@ -11,7 +12,6 @@ import java.util.List;
  */
 public interface OrderService {
 
-    List<Order> getOrderBycondition(Long id, Long userId, Long shopId, Date sdate, Date edate, Integer pageNum, Integer pageSize);
+    PageInfo<Order> getOrderBycondition(Integer pageNow,Integer pageSize,Long id, Long userId, Long shopId, Date sdate, Date edate);
 
-    Integer getOrderCount(Long id, Long userId, Long shopId, Date sdate, Date edate);
 }

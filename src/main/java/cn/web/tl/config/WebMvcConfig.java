@@ -30,7 +30,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Resource
     private SysInterceptor interceptor;
-
+    @Autowired
+    private LoginHandlerInterceptor loginHandlerInterceptor;
 
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/login").setViewName("login");
@@ -56,6 +57,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
         //拦截除了"/", "/login","/doLogin"之外的所有请求
        // registry.addInterceptor(loginHandlerInterceptor).addPathPatterns("/**").excludePathPatterns("/", "/login","/doLogin");
         //拦截/sys/下面所有请求
-        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/sys/**");
+        registry.addInterceptor(loginHandlerInterceptor).addPathPatterns("/sys/**");
     }
 }

@@ -61,13 +61,11 @@
 
 </head>
 <body>
+<div class="login_title">
+    <p><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>天狼游戏代练网</p>
+</div>
 <div class="hf">
     <div class="login">
-        <div class="login_title">
-
-            <p><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>天狼游戏代练网</p>
-        </div>
-
         <div class="login_main">
             <div class="main_left"></div>
             <div class="main_right">
@@ -95,9 +93,10 @@
                         <!--<a class="nwb"></a>-->
                     </div>
                     <p class="good-tips marginB10">
-                        <a class="fr" href="#">忘记密码？</a>
-                        <span>还没有账号？<span>
                         <a href="#" target="_blank" id="btnRegister">立即注册</a>
+                        <span>还没有账号？<span>
+
+                                <a class="fr" href="#">忘记密码？</a>
                     </p>
                 </form>
             </div>

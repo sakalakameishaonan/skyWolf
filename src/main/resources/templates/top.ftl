@@ -88,7 +88,7 @@
     <div class="mid">
         <div class="mid-div">
             <div class="mid-left" style="text-align:center;">
-                <img src="/static/imgs/logo/logo.png" alt=""  style="display: inline-block;width:115px;height:115px;padding-top: 20px;">
+                <img src="/imgs/logo/logo.png" alt=""  style="display: inline-block;width:115px;height:115px;padding-top: 20px;">
             </div>
             <div class="mid-right">
                 <div>
@@ -133,17 +133,17 @@
             <div class="hot_sales_goods">
                 <div class="hot_sales_goods_detail_1">
                     <div class="hot_sales_goods_img">
-                        <img src="/static/imgs/mx/1.jpg" style="width:313px;height:140px;"/>
+                        <img src="/imgs/mx/1.jpg" style="width:313px;height:140px;"/>
                     </div>
                 </div>
                 <div class="hot_sales_goods_detail_2">
                     <div class="hot_sales_goods_img">
-                        <img src="/static/imgs/mx/2.jpg" style="width:313px;height:140px;"/>
+                        <img src="/imgs/mx/2.jpg" style="width:313px;height:140px;"/>
                     </div>
                 </div>
                 <div class="hot_sales_goods_detail_3">
                     <div class="hot_sales_goods_img">
-                        <img src="/static/imgs/mx/3.jpg" style="width:313px;height:140px;"/>
+                        <img src="/imgs/mx/3.jpg" style="width:313px;height:140px;"/>
                     </div>
                 </div>
             </div>

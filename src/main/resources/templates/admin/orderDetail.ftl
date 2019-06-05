@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="/static/css/iframe.css" rel="stylesheet" type="text/css" />
-    <script src="/static/js/jquery-1.12.4.js"></script>
+    <link href="/css/iframe.css" rel="stylesheet" type="text/css" />
+    <script src="/js/jquery-1.12.4.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript">
         $(function () {

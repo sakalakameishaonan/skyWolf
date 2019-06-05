@@ -52,8 +52,7 @@
 .nav-g a:hover{color: red;text-decoration: underline;}
 
 
-<!--首页QQ样式-->
-
+/*首页QQ样式*/
         /*reset*/
     html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu{
         margin:0;
@@ -138,7 +137,7 @@ a:-webkit-any-link{text-decoration:none;}
 .suspension .d-service-item .text .number{font-family:Arial,"Microsoft Yahei","HanHei SC",PingHei,"PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
 .suspension .d-service-intro{padding-top:10px;}
 .suspension .d-service-intro p{float:left;line-height:27px;font-size:12px;width:50%;white-space:nowrap;color:#888;}
-.suspension .d-service-intro i{background:url(../images/side_con_icon01.png) no-repeat center center;height:27px;width:14px;margin-right:5px;vertical-align:top;display:inline-block;}
+.suspension .d-service-intro i{background:url(../images/side_icon.png) no-repeat center center;height:27px;width:14px;margin-right:5px;vertical-align:top;display:inline-block;}
 .suspension .d-qrcode{text-align:center;}
 .suspension .d-qrcode .inner-box{padding:20px 0;}
 .suspension .d-qrcode p{font-size:16px;color:#93959c;}

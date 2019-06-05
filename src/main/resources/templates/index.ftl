@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta charset="UTF-8">
     <title>天狼代练平台--全宇宙最好的游戏代练平台</title>
 
-    <link type="text/css" href="/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="icon" href="/imgs/title/tl.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="/css/recommend.css">
-    <link rel="stylesheet" type="text/css" href="/css/navigation.css">
-    <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
-
+    <link type="text/css" href="/static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
+    <link rel="icon" href="/static/imgs/title/tl.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/recommend.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
+    <script src="webjars/jquery/3.4.1/jquery.js"></script>
 </head>
 <body>
 
@@ -25,10 +24,10 @@
 <div class="suspension">
     <div class="suspension-box">
         <a href="#" class="a a-service "><i class="i"></i></a>
-        <a href="javascript:;" class="a a-service-phone "><i class="i"></i></a>
-        <a href="javascript:;" class="a a-qrcode"><i class="i"></i></a>
+        <a href="#" class="a a-service-phone "><i class="i"></i></a>
+        <a href="#" class="a a-qrcode"><i class="i"></i></a>
         <a href="#" class="a a-cart"><i class="i"></i></a>
-        <a href="javascript:;" class="a a-top"><i class="i"></i></a>
+        <a href="#" class="a a-top"><i class="i"></i></a>
         <div class="d d-service">
             <i class="arrow"></i>
             <div class="inner-box">
@@ -57,7 +56,7 @@
         <div class="d d-qrcode">
             <i class="arrow"></i>
             <div class="inner-box">
-                <div class="qrcode-img"><img src="images/side_ewm.jpg" alt=""></div>
+                <div class="qrcode-img"><img src="/static/images/side_ewm.jpg" alt=""></div>
                 <p>微信服务号</p>
             </div>
         </div>

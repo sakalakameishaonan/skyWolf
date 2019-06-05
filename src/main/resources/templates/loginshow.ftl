@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
-    <link rel="stylesheet" href="/static/css/loginshow.css">
+    <link rel="stylesheet" href="/css/loginshow.css">
     <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.js"></script>
     <script type="text/javascript">
         $(function () {
@@ -65,7 +65,7 @@
     <div class="login">
         <div class="login_title">
 
-            <p><img src="/static/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>天狼游戏代练网</p>
+            <p><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>天狼游戏代练网</p>
         </div>
 
         <div class="login_main">
@@ -74,11 +74,11 @@
                 <div class="right_title">登录</div>
                 <form action="/show/login" method="post" id="myform">
                     <div class="username">
-                        <img src="/static/loginshow/username.png" alt="">
+                        <img src="/loginshow/username.png" alt="">
                         <input type="text" class="username" name="username" value="${username}" placeholder="请输入用户名">
                     </div>
                     <div class="password">
-                        <img src="/static/loginshow/password.png" alt="">
+                        <img src="/loginshow/password.png" alt="">
                         <input type="text" class="password" name="pwd" placeholder="请输入密码">
 
                     </div>

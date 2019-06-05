@@ -1,7 +1,5 @@
 package cn.web.tl.config;
 
-import cn.web.tl.interceptor.LoginHandlerInterceptor;
-import cn.web.tl.interceptor.SysInterceptor;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;

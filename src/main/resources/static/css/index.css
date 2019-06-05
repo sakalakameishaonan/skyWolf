@@ -4,25 +4,15 @@ body{overflow-x: hidden;}
 .nav-a:visited {color: #777} 
 .nav-a:hover {color: red;} 
 .nav-a:active {color: #777} 
-.nav-a {
-	text-decoration:none;
-}
+.nav-a {text-decoration:none;}
 #nav-n{width:1391px;margin:0 auto;background: #fff;}
-#nav{
-	margin-top:6px;
-	background: #f4f6f9;
-}
+#nav{margin-top:6px;background: #f4f6f9;}
 #top-nav a:link {color: #777 } 
-.sspan{
-	padding: 0px 4px;cursor: pointer;
-}
+.sspan{padding: 0px 4px;cursor: pointer;}
 #top-nav a:visited {color: #777} 
-
-#top-nav a:hover {color: red;} 
-
-#top-nav a:active {color: #777} 
+#top-nav a:hover {color: red;}
+#top-nav a:active {color: #777}
 .hr{background-color:#eee;border-bottom: 2px solid #178A3D;width: 100%;clear: both;}
-
 #main{width: 1520px;height: 950px;    margin: 0 auto;background: #f4f6f9; }
 #page{width: 1520px;}
 #main li{float: left;list-style: none;}
@@ -43,17 +33,19 @@ body{overflow-x: hidden;}
 #pageP{color: #777;font-size: 20px;text-align:center;}
 .page-button:hover{background:radial-gradient(yellowgreen,yellowgreen);color:white;}
 #pageP input{width:60px;font-size: 18px;text-align: center;}
-#page{margin-bottom: 10px;margin: 0 auto;}
+#page{padding-top: 20px;}
 .page-button-p{width: 50px;}
 .page-button i{color: #777;font-style: normal;font-size: 16px;line-height: 18px;}
 .p-desc a{font-size: 15px;color: #666;}
 .p-desc a:hover{color: red;}
 .p-desc{margin: 5px 15px 5px 15px;}
-#footer p{text-align: center;padding-top: 20px;}
-#footer{margin-top:4px;padding-bottom: 20px;}
+#footer p{text-align: center;padding-top: 10px;}
+#footer{width:1520px;margin-top:4px;padding-bottom: 20px;}
 .footer-a{color: black;text-decoration: none;}
 .footer-a:hover{color: #f30213;}
-
+body{overflow: scroll;}
+#bigTop{width: 1520px;}
+#footer-hr{margin:10px 0px;}
 
 
 

@@ -162,7 +162,7 @@
         <div id="nav-n" style="background:#f4f6f9;margin-top: 10px;">
             <table id="navigation">
                 <tr>
-                    <td style=" text-indent: 0;color: #178A3D;font-size: 24px;font-weight: 900;">
+                    <td style="text-align: left; text-indent: 0;color: #178A3D;font-size: 24px;font-weight: 900;">
                         店铺筛选
                     </td>
                     <td style="

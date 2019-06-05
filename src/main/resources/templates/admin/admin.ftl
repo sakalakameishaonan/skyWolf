@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="/static/js/jquery-1.12.4.js"></script>
-    <link href="/static/css/admin.css" rel="stylesheet" type="text/css" />
-    <link href="/static/css/animate.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+    <link href="/css/admin.css" rel="stylesheet" type="text/css" />
+    <link href="/css/animate.css" rel="stylesheet" type="text/css" />
 </head>
+<style>
+    #leftList a{text-decoration: none;color: white;}
+</style>
 <body>
 <div id="main">
 
@@ -27,52 +30,41 @@
         <div id="adminInfo"></div>
 
         <div id="leftList" class="white" onClick="checkSession()">
-
             <ul id="home"class="mt-5"><li class="mt-2" onClick="javascript:history.go(0)">Home(主页)</li></ul>
-
-
-
-            <ul id="equip" ><li class="mt-2">Shop(开店)</li></ul>
+            <ul id="equip" ><li class="mt-2">店铺管理</li></ul>
             <div id="equipDiv" class="none mt-2">
-                <ul><li class="mt-2" onClick="addEquip()">添加装备</li></ul>
-                <ul><li class="mt-2" onClick="equip()">装备管理</li></ul>
+                <ol><li class="mt-2">商店列表</li></ol>
+                <ol><li class="mt-2">开店申请</li></ol>
             </div>
 
             <!--玩家点击够买付款完毕有条未读订单查看-->
             <ul id="uuid"><li class="mt-2">Order(订单)</li></ul>
             <div id="uuidDiv"  class="none mt-2">
-                <ul><li class="mt-2" onClick="addUuid()">添加卡密</li></ul>
-                <ul><li class="mt-2" onClick="uuid()">查看卡密</li></ul>
+                <ol><li class="mt-2"><a href="/sys/toOrder" target="iframe">订单查询</a></li></ol>
+                <ol><li class="mt-2">所有订单</li></ol>
             </div>
             <ul id="userDm"><li class="mt-2">UserDm(玩家)</li></ul>
             <div id="userDmDiv"  class="none mt-2">
-                <ul><li class="mt-2" onClick="userDm()">玩家管理</li></ul>
+                <ol><li class="mt-2" >玩家管理</li></ol>
 
             </div>
 
+            <ul id="guanli" ><li class="mt-2">管理员管理</li></ul>
+            <div id="equipDiv" class="none mt-2">
+                <ol><li class="mt-2" onClick="addEquip()">订单管理</li></ol>
+                <ol><li class="mt-2" onClick="equip()">装备管理</li></ol>
+            </div>
+
         </div>
-
-
-
-
-
     </div>
     <div id="right">
-        <iframe  name="iframe" >
-
-
-
-
+        <iframe  name="iframe">
         </iframe>
     </div>
-
 </div>
-
-<script type="text/javascript" src="/static/js/admin.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
 <script type="text/javascript">
     iframe.location.href="main.html";
-
 </script>
-
 </body>
 </html>

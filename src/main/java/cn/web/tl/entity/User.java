@@ -119,4 +119,22 @@ public class User {
     public void setHeadimg(String headimg) {
         this.headimg = headimg;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "eid=" + eid +
+                ", account='" + account + '\'' +
+                ", ename='" + ename + '\'' +
+                ", gender=" + gender +
+                ", birthdate=" + birthdate +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", password='" + password + '\'' +
+                ", address='" + address + '\'' +
+                ", position='" + position + '\'' +
+                ", role=" + role +
+                ", headimg='" + headimg + '\'' +
+                '}';
+    }
 }

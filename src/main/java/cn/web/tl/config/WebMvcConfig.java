@@ -1,24 +1,41 @@
 package cn.web.tl.config;
 
+import cn.web.tl.interceptor.LoginHandlerInterceptor;
+import cn.web.tl.interceptor.SysInterceptor;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author dxq
- * @date 2019-06-02 - 13:43
+ * @date 2019-06-04 - 22:19
  */
 @Configuration
-public class myConfig   implements WebMvcConfigurer{
+public class WebMvcConfig implements WebMvcConfigurer {
+
+    private Logger logger = LoggerFactory.getLogger(WebMvcConfig.class);
+
+    @Resource
+    private SysInterceptor interceptor;
+
+
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/login").setViewName("login");
+    }
+
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
@@ -33,12 +50,12 @@ public class myConfig   implements WebMvcConfigurer{
         converters.add(fastConverter);
     }
 
-
-
-
-
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/login").setViewName("login");
+    /*登录拦截器*/
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        //拦截除了"/", "/login","/doLogin"之外的所有请求
+       // registry.addInterceptor(loginHandlerInterceptor).addPathPatterns("/**").excludePathPatterns("/", "/login","/doLogin");
+        //拦截/sys/下面所有请求
+        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/sys/**");
     }
-
 }

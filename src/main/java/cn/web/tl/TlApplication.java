@@ -10,5 +10,4 @@ public class TlApplication {
     public static void main(String[] args) {
         SpringApplication.run(TlApplication.class, args);
     }
-
 }

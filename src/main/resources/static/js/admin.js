@@ -52,8 +52,7 @@ function addUuid(){
 }
 
 $(function(){
-
-	$.post("AdminServlet", {
+	/*$.post("AdminServlet", {
 		"ope" : "getAdminById"
 	},function getAdminById(data) {
 
@@ -64,59 +63,17 @@ $(function(){
 						+"<ul><li class='white mt-2' >"+data.name+"</li></ul>");
 
 
-	}, "json");
+	}, "json");*/
 
-
-	
-	
-	
-	
-	
-	$("#equip").click(function(){
-
-
-		if($("#equipDiv").is(":visible")){
-			$("#leftList").find("div").hide();
-		}else{
-			$("#leftList").find("div").hide();
-			$("#equipDiv").show();
-			$("#equipDiv").addClass("animated flip");
+	$("#leftList ul").click(function () {
+		$("#leftList div").not($(this).next("div")).hide();
+		if ($(this).next("div").is(":visible")) {
+			$(this).next("div").hide();
+		} else {
+			$(this).next("div").show();
+			$(this).next("div").addClass("animated flip");
 		}
-		
-		
-	}
-	);
-
-
-	$("#userDm").click(function(){
-
-		
-		if($("#userDmDiv").is(":visible")){
-			$("#leftList").find("div").hide();
-		}else{
-			$("#leftList").find("div").hide();
-			$("#userDmDiv").show();
-			$("#userDmDiv").addClass("animated flip");
-		}
-		
-		
-	}
-	);	
-	
-$("#uuid").click(function(){
-
-		
-		if($("#uuidDiv").is(":visible")){
-			$("#leftList").find("div").hide();
-		}else{
-			$("#leftList").find("div").hide();
-			$("#uuidDiv").show();
-			$("#uuidDiv").addClass("animated flip");
-		}
-		
-		
-	}
-	);	
+	});
 	
 });
 

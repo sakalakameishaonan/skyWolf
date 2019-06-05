@@ -1,6 +1,5 @@
 package cn.web.tl.controller;
 
-import cn.web.tl.entity.User;
 import cn.web.tl.service.UserService;
 import cn.web.tl.util.Constants;
 import org.slf4j.Logger;

@@ -1,7 +1,6 @@
 package cn.web.tl.service.impl;
 
 import cn.web.tl.dao.UserMapper;
-import cn.web.tl.entity.User;
 import cn.web.tl.service.UserService;
 import org.springframework.stereotype.Service;
 

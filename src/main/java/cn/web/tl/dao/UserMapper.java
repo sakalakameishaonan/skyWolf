@@ -1,6 +1,5 @@
 package cn.web.tl.dao;
 
-import cn.web.tl.entity.User;
 import org.apache.ibatis.annotations.Param;
 
 /**

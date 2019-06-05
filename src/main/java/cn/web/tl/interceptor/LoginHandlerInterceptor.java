@@ -1,11 +1,8 @@
 package cn.web.tl.interceptor;
 
-import cn.web.tl.entity.User;
 import cn.web.tl.util.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 

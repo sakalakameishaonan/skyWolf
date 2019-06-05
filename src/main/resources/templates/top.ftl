@@ -65,7 +65,7 @@
         <div class="site-nav">
             <div>
                 <ul>
-                    <li><a href="" class="login-nav ">您好，请登录</a></li>
+                    <li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>
                     <li><a href="" class="nav-a">免费注册</a></li>
                     <li><a href="" class="nav-a">qq登录</a></li>
                 </ul>

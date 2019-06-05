@@ -30,16 +30,5 @@ public class LoginController {
 	@Resource
 	private UserService service;
 
-	@RequestMapping(value = "/doLogin",method = RequestMethod.POST)
-	public String doLogin(@RequestParam("account") String account, @RequestParam("password") String pwd, HttpSession session){
-		logger.info("================================>>>>>>>>>>>>>>>>>进入登录方法");
-		User user = service.login(account, pwd);
-		logger.info(user.getAccount()+"登录");
-		if (user != null){
-			session.setAttribute(Constants.USER_SESSION,user);
-			return "admin/admin";
-		} else {
-			return "login";
-		}
-	}
+
 }

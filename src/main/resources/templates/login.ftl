@@ -40,7 +40,7 @@ body{
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 .u_logo{
-	background: url("/static/img/username.png") no-repeat;
+	background: url("/img/username.png") no-repeat;
 	padding: 10px 10px;
 	position: absolute;
 	top: 43px;
@@ -48,7 +48,7 @@ body{
 
 }
 .p_logo{
-	background: url("/static/img/password.png") no-repeat;
+	background: url("/img/password.png") no-repeat;
 	padding: 10px 10px;
 	position: absolute;
 	top: 12px;
@@ -58,7 +58,7 @@ a{
 	text-decoration: none;
 }
 .tou{
-	background: url("/static/img/tou.png") no-repeat;
+	background: url("/img/tou.png") no-repeat;
 	width: 97px;
 	height: 92px;
 	position: absolute;
@@ -66,7 +66,7 @@ a{
 	left: 140px;
 }
 .left_hand{
-	background: url("/static/img/left_hand.png") no-repeat;
+	background: url("/img/left_hand.png") no-repeat;
 	width: 32px;
 	height: 37px;
 	position: absolute;
@@ -74,7 +74,7 @@ a{
 	left: 150px;
 }
 .right_hand{
-	background: url("/static/img/right_hand.png") no-repeat;
+	background: url("/img/right_hand.png") no-repeat;
 	width: 32px;
 	height: 37px;
 	position: absolute;
@@ -82,7 +82,7 @@ a{
 	right: -64px;
 }
 .initial_left_hand{
-	background: url("/static/img/hand.png") no-repeat;
+	background: url("/img/hand.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -90,7 +90,7 @@ a{
 	left: 100px;
 }
 .initial_right_hand{
-	background: url("/static/img/hand.png") no-repeat;
+	background: url("/img/hand.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -98,7 +98,7 @@ a{
 	right: -112px;
 }
 .left_handing{
-	background: url("/static/img/left-handing.png") no-repeat;
+	background: url("/img/left-handing.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -106,7 +106,7 @@ a{
 	left: 139px;
 }
 .right_handinging{
-	background: url("/static/img/right_handing.png") no-repeat;
+	background: url("/img/right_handing.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;

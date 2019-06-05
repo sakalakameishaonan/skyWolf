@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>天狼代练平台--全宇宙最好的游戏代练平台</title>
 
-    <link type="text/css" href="/static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
-    <link rel="icon" href="/static/imgs/title/tl.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/recommend.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
+    <link type="text/css" href="/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="icon" href="/imgs/title/tl.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/css/recommend.css">
+    <link rel="stylesheet" type="text/css" href="/css/navigation.css">
     <script src="webjars/jquery/3.4.1/jquery.js"></script>
 </head>
 <body>
@@ -56,13 +56,13 @@
         <div class="d d-qrcode">
             <i class="arrow"></i>
             <div class="inner-box">
-                <div class="qrcode-img"><img src="/static/images/side_ewm.jpg" alt=""></div>
+                <div class="qrcode-img"><img src="/images/side_ewm.jpg" alt=""></div>
                 <p>微信服务号</p>
             </div>
         </div>
 
     </div>
 </div>
-<script src="/static/js/index.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>

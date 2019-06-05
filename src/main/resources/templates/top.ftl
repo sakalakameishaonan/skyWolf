@@ -10,7 +10,7 @@
     <link rel="icon" href="/static/imgs/title/tl.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/static/css/recommend.css">
     <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
-    <script src="webjars/jquery/3.2.1/dist/jquery.js"></script>
+    <script src="webjars/jquery/3.4.1/jquery.js"></script>
 
     <style type="text/css">
 

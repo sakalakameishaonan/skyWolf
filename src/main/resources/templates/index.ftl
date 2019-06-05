@@ -10,7 +10,7 @@
     <link rel="icon" href="/static/imgs/title/tl.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/static/css/recommend.css">
     <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
-    <script src="webjars/jquery/3.2.1/dist/jquery.js"></script>
+    <script src="webjars/jquery/3.4.1/jquery.js"></script>
 
 </head>
 <body>
@@ -57,7 +57,7 @@
         <div class="d d-qrcode">
             <i class="arrow"></i>
             <div class="inner-box">
-                <div class="qrcode-img"><img src="images/side_ewm.jpg" alt=""></div>
+                <div class="qrcode-img"><img src="/static/images/side_ewm.jpg" alt=""></div>
                 <p>微信服务号</p>
             </div>
         </div>

@@ -17,5 +17,5 @@ public interface OrderMapper {
                                     @Param("edate") Date edate);
 
 
-    List<Order> queryDetails(@Param("id") Long id);
+    Order queryDetails(@Param("id") Long id);
 }

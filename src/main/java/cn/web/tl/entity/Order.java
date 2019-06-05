@@ -31,6 +31,7 @@ public class Order {
     private Long userId;
     private String telephone;
     private String begin;
+    private Integer gameId;
     private String end;
     private String gaccount;
     private String gpassword;
@@ -42,7 +43,50 @@ public class Order {
 
     private Game game;
     private Shop shop;
+    private UserShow userShow;
+    private CheckWZ checkWZ;
+    private CheckWZ checkWZ2;
+    private Employee employee;
 
+    public Integer getGameId() {
+        return gameId;
+    }
+
+    public void setGameId(Integer gameId) {
+        this.gameId = gameId;
+    }
+
+    public CheckWZ getCheckWZ2() {
+        return checkWZ2;
+    }
+
+    public void setCheckWZ2(CheckWZ checkWZ2) {
+        this.checkWZ2 = checkWZ2;
+    }
+
+    public UserShow getUserShow() {
+        return userShow;
+    }
+
+    public void setUserShow(UserShow userShow) {
+        this.userShow = userShow;
+    }
+
+    public CheckWZ getCheckWZ() {
+        return checkWZ;
+    }
+
+    public void setCheckWZ(CheckWZ checkWZ) {
+        this.checkWZ = checkWZ;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
 
     public Shop getShop() {
         return shop;

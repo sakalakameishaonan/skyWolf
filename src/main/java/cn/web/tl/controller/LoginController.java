@@ -1,7 +1,7 @@
 package cn.web.tl.controller;
 
-import cn.web.tl.entity.User;
-import cn.web.tl.service.UserService;
+import cn.web.tl.entity.Employee;
+import cn.web.tl.service.EmployeeService;
 import cn.web.tl.util.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,15 +29,15 @@ public class LoginController {
 	private Logger logger = LoggerFactory.getLogger(LoginController.class);
 
 	@Resource
-	private UserService service;
+	private EmployeeService service;
 
 	@RequestMapping(value = "/doLogin",method = RequestMethod.POST)
 	public String doLogin(@RequestParam("account") String account, @RequestParam("password") String pwd, HttpSession session){
 		logger.info("================================>>>>>>>>>>>>>>>>>进入登录方法");
-		User user = service.login(account, pwd);
-		logger.info(user.getAccount()+"登录");
-		if (user != null){
-			session.setAttribute(Constants.USER_SESSION,user);
+		Employee employee = service.login(account, pwd);
+		logger.info(employee.getEname()+"登录");
+		if (employee != null){
+			session.setAttribute(Constants.USER_SESSION, employee);
 			return "admin/admin";
 		} else {
 			return "login";

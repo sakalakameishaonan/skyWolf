@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * 用户类
  */
-public class User {
+public class Employee {
    private Long eid;
    private String account;
    private String ename;
@@ -20,7 +20,7 @@ public class User {
    private Integer role;
    private String headimg;
 
-    public User() {
+    public Employee() {
     }
 
 
@@ -122,7 +122,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Employee{" +
                 "eid=" + eid +
                 ", account='" + account + '\'' +
                 ", ename='" + ename + '\'' +

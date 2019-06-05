@@ -11,15 +11,12 @@
     <link rel="stylesheet" type="text/css" href="/static/css/recommend.css">
     <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
     <script src="webjars/jquery/3.2.1/dist/jquery.js"></script>
-
     <style type="text/css">
-
         .menu {
             clear: left;
             padding-left: 0px;
             width: 100%;
             height: 40px;
-
         }
 .indexSy{
     font-size: 18px;

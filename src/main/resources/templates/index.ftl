@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>天狼代练平台--全宇宙最好的游戏代练平台</title>
 
-    <link type="text/css" href="/static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css" type="text/css">
-    <link rel="icon" href="/static/imgs/title/tl.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="/static/css/recommend.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/navigation.css">
-    <script src="webjars/jquery/3.2.1/dist/jquery.js"></script>
+    <link type="text/css" href="/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="icon" href="/imgs/title/tl.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/css/recommend.css">
+    <link rel="stylesheet" type="text/css" href="/css/navigation.css">
+    <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>

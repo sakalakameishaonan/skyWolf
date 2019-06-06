@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping(value = "/show")
@@ -22,7 +23,7 @@ public class UserShowController {
     }
 
     @RequestMapping(value = "/login" ,method = RequestMethod.POST)
-    public String login(String username, String pwd, RedirectAttributes model){
+    public String login(String username, String pwd, RedirectAttributes model, HttpSession session){
         Account account=services.login(username);
         System.out.println(account);
         if (account==null){
@@ -31,12 +32,21 @@ public class UserShowController {
             return "redirect:/tologin";
         }else if (account.getPassword().equals(pwd)){
             System.out.println("2222"+account);
-            model.addAttribute("ulist",account);
-            return "show";
+           session.setAttribute("alist",account);
+            return "/";
         }else {
             model.addFlashAttribute("username",username);
             model.addFlashAttribute("msg","账号或密码错误，请重新输入");
             return "redirect:/tologin";
         }
+    }
+    @RequestMapping(value = "/toadd")
+    public String toadd(){
+        return "add";
+
+    }
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
+    public String add(){
+        return "/";
     }
 }

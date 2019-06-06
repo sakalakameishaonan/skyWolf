@@ -89,7 +89,7 @@
                     </div>
                     <p class="good-tips marginB10">
                          <span>还没有账号？<span>
-                        <a href="#" target="_blank" id="btnRegister">立即注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/show/toadd" target="_blank" id="btnRegister">立即注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                  <a class="fr" href="#">忘记密码？</a>
                     </p>
                 </form>

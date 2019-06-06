@@ -66,10 +66,26 @@
             <div>
                 <ul>
                     <li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>
-                    <li><a href="" class="nav-a">免费注册</a></li>
-                    <li><a href="" class="nav-a">qq登录</a></li>
+                    <li><a href="/show/toadd" class="nav-a">免费注册</a></li>
                 </ul>
             </div>
+            <#--<script type="text/javascript">-->
+                <#--var username =${alist};-->
+                <#--$(document).ready(function(){-->
+                    <#--$("#info").click(function(){-->
+                        <#--$("p").hide();-->
+                    <#--});-->
+                    <#--$("#info").click(function(){-->
+                        <#--$("p").show();-->
+                    <#--});-->
+                <#--});-->
+            <#--</script>-->
+            <#--<div id="info">-->
+                <#--<ul>-->
+                    <#--<li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>-->
+                    <#--<li><a href="" class="nav-a">免费注册</a></li>-->
+                <#--</ul>-->
+            <#--</div>-->
             <div>
                 <ul class="nav-ul-right">
                     <li><a href="">我的天狼</a></li>

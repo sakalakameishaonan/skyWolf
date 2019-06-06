@@ -57,6 +57,11 @@
                 <ol><li class="mt-2" onClick="equip()">装备管理</li></ol>
             </div>
 
+            <ul id="guanli" ><li class="mt-2">客户服务管理</li></ul>
+            <div id="equipDiv" class="none mt-2">
+                <ol><li class="mt-2" onClick="addEquip()">订单审核</li></ol>
+                <ol><li class="mt-2" onClick="equip()">待开发。</li></ol>
+            </div>
         </div>
     </div>
     <div id="right">

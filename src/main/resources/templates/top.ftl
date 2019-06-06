@@ -66,12 +66,9 @@
             <div>
                 <ul>
                     <li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>
-<<<<<<< HEAD
                     <li><a href="/show/toadd" class="nav-a">免费注册</a></li>
-=======
                     <li><a href="" class="nav-a">免费注册</a></li>
                     <li><a href="" class="nav-a">qq登录</a></li>
->>>>>>> fc10ad51d70a825c72c385ccd1466f68ed17a3e5
                 </ul>
             </div>
             <#--<script type="text/javascript">-->

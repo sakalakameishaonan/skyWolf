@@ -44,9 +44,25 @@ public class Order {
     private Game game;
     private Shop shop;
     private UserShow userShow;
-    private CheckWZ checkWZ;
-    private CheckWZ checkWZ2;
+    private OrderStart orderStart;
+    private OrderEnd orderEnd;
     private Employee employee;
+
+    public OrderStart getOrderStart() {
+        return orderStart;
+    }
+
+    public void setOrderStart(OrderStart orderStart) {
+        this.orderStart = orderStart;
+    }
+
+    public OrderEnd getOrderEnd() {
+        return orderEnd;
+    }
+
+    public void setOrderEnd(OrderEnd orderEnd) {
+        this.orderEnd = orderEnd;
+    }
 
     public Integer getGameId() {
         return gameId;
@@ -56,13 +72,6 @@ public class Order {
         this.gameId = gameId;
     }
 
-    public CheckWZ getCheckWZ2() {
-        return checkWZ2;
-    }
-
-    public void setCheckWZ2(CheckWZ checkWZ2) {
-        this.checkWZ2 = checkWZ2;
-    }
 
     public UserShow getUserShow() {
         return userShow;
@@ -72,13 +81,6 @@ public class Order {
         this.userShow = userShow;
     }
 
-    public CheckWZ getCheckWZ() {
-        return checkWZ;
-    }
-
-    public void setCheckWZ(CheckWZ checkWZ) {
-        this.checkWZ = checkWZ;
-    }
 
     public Employee getEmployee() {
         return employee;

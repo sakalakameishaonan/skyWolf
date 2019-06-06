@@ -29,12 +29,10 @@
         LEFT JOIN game ON user_order.gameId = game.gameId
         LEFT JOIN shop on user_order.shopId = shop.shopId
         LEFT JOIN user on user_order.userId = `user`.id
-        LEFT JOIN check_wz c1 on user_order.id = c1.orderId
-        LEFT JOIN check_wz c2 on user_order.id = c2.orderId
+        LEFT JOIN orderStart  on user_order.id = orderStart.orderId
+        LEFT JOIN orderEnd  on user_order.id = orderEnd.orderId
         LEFT JOIN employee on c1.checkerId = employee.eid
         where user_order.id = #{id}
-        and c1.status = 0
-        and c2.status = 1
     </select>
 
     <resultMap id="detailsMap" type="cn.web.tl.entity.Order">
@@ -81,7 +79,7 @@
             <result property="buyercredit" column="buyercredit"/>
             <result property="sellercredit" column="sellercredit"/>
          </association>
-        <association property="checkWZ" javaType="cn.web.tl.entity.CheckWZ">
+        <association property="orderStart" javaType="cn.web.tl.entity.OrderStart">
             <id property="id" column="id"/>
             <result property="orderId" column="orderId"/>
             <result property="indexPic" column="indexPic"/>
@@ -90,11 +88,9 @@
             <result property="tickets" column="tickets"/>
             <result property="diamonds" column="diamonds"/>
             <result property="finishTime" column="finishTime"/>
-            <result property="factTime" column="factTime"/>
             <result property="checkerId" column="checkerId"/>
-            <result property="status" column="status"/>
         </association>
-        <association property="checkWZ2" javaType="cn.web.tl.entity.CheckWZ">
+        <association property="orderEnd" javaType="cn.web.tl.entity.OrderEnd">
             <id property="id" column="id"/>
             <result property="orderId" column="orderId"/>
             <result property="indexPic" column="indexPic"/>
@@ -105,7 +101,6 @@
             <result property="finishTime" column="finishTime"/>
             <result property="factTime" column="factTime"/>
             <result property="checkerId" column="checkerId"/>
-            <result property="status" column="status"/>
         </association>
         <association property="employee" javaType="cn.web.tl.entity.Employee">
             <id property="eid" column="eid"/>
@@ -133,4 +128,5 @@
             <result property="shopname" column="shopname"/>
         </association>
     </resultMap>
+
 </mapper>

@@ -40,11 +40,11 @@ body{overflow-x: hidden;}
 .p-desc a:hover{color: red;}
 .p-desc{margin: 5px 15px 5px 15px;}
 #footer p{text-align: center;padding-top: 10px;}
-#footer{width:1520px;margin-top:4px;padding-bottom: 20px;}
+#footer{width:1520px;margin:4px auto;padding-bottom: 20px;}
 .footer-a{color: black;text-decoration: none;}
 .footer-a:hover{color: #f30213;}
-body{overflow: scroll;}
-#bigTop{width: 1520px;}
+body{overflow-x:auto;margin: 0 auto;}
+#bigTop{width: 1520px;text-align: center;}
 #footer-hr{margin:10px 0px;}
 
 

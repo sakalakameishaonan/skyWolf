@@ -4,10 +4,10 @@ import java.util.Date;
 
 /**
  * @author FanWeichong
- * @date 2019-06-05 17:34
- * 客服-王者荣耀审核数据提交
+ * @date 2019-06-05 21:31
+ * 客服-王者荣耀订单开始审核数据提交
  */
-public class CheckWZ {
+public class OrderStart {
     private long id;//王者荣耀审核记录编号
     private long orderId;//订单编号（对应Order表中的Id）
     private String indexPic;//客户账号首页截图路径
@@ -16,9 +16,8 @@ public class CheckWZ {
     private int tickets;//客户账号点券数量
     private int diamonds;//客户账号钻石数量
     private Date finishTime;//订单预计完成时间
-    private Date factTime;//订单实际完成时间（status为1时，才有数据）
     private long checkerId;//审核人Id（员工编号）
-    private int status;//0-订单开始，1-订单完成
+    private String desc;//备注信息
 
     public long getId() {
         return id;
@@ -84,14 +83,6 @@ public class CheckWZ {
         this.finishTime = finishTime;
     }
 
-    public Date getFactTime() {
-        return factTime;
-    }
-
-    public void setFactTime(Date factTime) {
-        this.factTime = factTime;
-    }
-
     public long getCheckerId() {
         return checkerId;
     }
@@ -100,11 +91,11 @@ public class CheckWZ {
         this.checkerId = checkerId;
     }
 
-    public int getStatus() {
-        return status;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setStatus(int status) {
-        this.status = status;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

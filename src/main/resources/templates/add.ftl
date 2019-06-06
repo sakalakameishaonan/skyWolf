@@ -52,20 +52,24 @@
     <script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
     <script type="text/javascript">
         $(function () {
-            $(".username").blur(function () {
+            $(".username").keyup(function () {
                 var name = $(this).val();
                 if (name == "" || name == null) {
                     $(".resultname").html("用户名不能为空").css("color", "red");
-                    $("input[name='username']").focus(function () {
-                        $(this).val("");
+                    $("input[name='username']").keyup(function () {
+                       // $(this).val("");
                         $(".resultname").html("");
                     });
                 }else{
-                    $.post("/aname",
-                        {"username":username},
+                    $.post("/show/aname",
+                        {"username":name},
                         function (flag) {
-                                if(flag){
-                                    $("#resultname").html("用户名已存在！");
+                                if(flag==true){
+                                    $(".resultname").text("用户名已存在！").css("color","red");
+                                    $("input[name='username']").keyup(function () {
+                                  //      $(this).val("");
+                                        $(".resultname").html("");
+                                    });
                             }
                         },"json")
 
@@ -226,7 +230,7 @@
                             <th height=65><font size='4'>用 户 名</th>
                             <th><input type="text" style="height:40px" placeholder="请输入用户名" size=40 class="username"
                                        name="username"></th>
-                            <th><p align="center" class="resultname"></p></th>
+                            <th><p  align="center" class="resultname"></p></th>
                         </tr>
                         <tr>
                             <th height=65><font size='4'>密 码</th>

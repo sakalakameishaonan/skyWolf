@@ -5,6 +5,7 @@ import cn.web.tl.service.UserShowServices;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -52,24 +53,25 @@ public class UserShowController {
 
     @RequestMapping(value = "/aname", produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public String ajaxUsername(String username){
-       Account account= services.queryUserByUsername(username);
+    public String ajaxUsername(String username) {
+        Account account = services.queryUserByUsername(username);
         boolean flag = false;
-        if(account!=null) {
+        if (account != null) {
             flag = true;
         }
-        return JSON.toJSONString(flag, SerializerFeature.PrettyFormat);
+        return JSON.toJSONString(flag);
 
     }
 
 
     @RequestMapping(value = "/doadd", method = RequestMethod.POST)
-    public String add(String username, String password, String phone) {
+    public String add(String username, String password, String phone,HttpSession session) {
         Integer n = services.addAccount(username, password, phone);
         if (n != 0 && n != null) {
+            session.setAttribute("ulist",services.queryUserByUsername(username));
             return "/";
-        }else {
-            return null;
+        } else {
+            return "";
         }
 
     }

@@ -63,32 +63,35 @@
 <div id="bigTop">
     <div id="top-nav">
         <div class="site-nav">
-            <div>
+            <div id="login1">
                 <ul>
                     <li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>
                     <li><a href="/show/toadd" class="nav-a">免费注册</a></li>
                 </ul>
             </div>
-            <#--<script type="text/javascript">-->
-                <#--var username =${alist};-->
-                <#--$(document).ready(function(){-->
-                    <#--$("#info").click(function(){-->
-                        <#--$("p").hide();-->
-                    <#--});-->
-                    <#--$("#info").click(function(){-->
-                        <#--$("p").show();-->
-                    <#--});-->
-                <#--});-->
-            <#--</script>-->
-            <#--<div id="info">-->
-                <#--<ul>-->
-                    <#--<li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>-->
-                    <#--<li><a href="" class="nav-a">免费注册</a></li>-->
-                <#--</ul>-->
-            <#--</div>-->
+            <script type="text/javascript">
+                var username =${alist.account};
+                $(document).ready(function(){
+                    alert(username);
+                    if(username!=null){
+                        alert(username);
+                        $("#info").show();
+                        $("#login1").hide();
+                    }else{
+                        $("#info").hide();
+                        $("#login1").show();
+                    }
+                });
+            </script>
+            <div id="info">
+                <ul>
+                    <li><a href="/show/userinfo" class="login-nav ">${alist.account}</a></li>
+                    <li><a href="" class="nav-a">退出</a></li>
+                </ul>
+            </div>
             <div>
                 <ul class="nav-ul-right">
-                    <li><a href="">我的天狼</a></li>
+                    <li><a href="/">我的天狼</a></li>
                     <li><span>|</span></li>
                     <li><a href="">我的收藏</a></li>
                     <li><span>|</span></li>

@@ -66,7 +66,12 @@
             <div>
                 <ul>
                     <li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>
+<<<<<<< HEAD
                     <li><a href="/show/toadd" class="nav-a">免费注册</a></li>
+=======
+                    <li><a href="" class="nav-a">免费注册</a></li>
+                    <li><a href="" class="nav-a">qq登录</a></li>
+>>>>>>> fc10ad51d70a825c72c385ccd1466f68ed17a3e5
                 </ul>
             </div>
             <#--<script type="text/javascript">-->
@@ -178,7 +183,7 @@
         <div id="nav-n" style="background:#f4f6f9;margin-top: 10px;">
             <table id="navigation">
                 <tr>
-                    <td style=" text-indent: 0;color: #178A3D;font-size: 24px;font-weight: 900;">
+                    <td style="text-align: left; text-indent: 0;color: #178A3D;font-size: 24px;font-weight: 900;">
                         店铺筛选
                     </td>
                     <td style="

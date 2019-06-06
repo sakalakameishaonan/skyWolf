@@ -25,11 +25,96 @@
 
 
     <select id="queryDetails" resultMap="detailsMap">
-
+        SELECT * from user_order
+        LEFT JOIN game ON user_order.gameId = game.gameId
+        LEFT JOIN shop on user_order.shopId = shop.shopId
+        LEFT JOIN user on user_order.userId = `user`.id
+        LEFT JOIN orderStart  on user_order.id = orderStart.orderId
+        LEFT JOIN orderEnd  on user_order.id = orderEnd.orderId
+        LEFT JOIN employee on c1.checkerId = employee.eid
+        where user_order.id = #{id}
     </select>
 
     <resultMap id="detailsMap" type="cn.web.tl.entity.Order">
-
+        <id property="id" column="id"/>
+        <result property="shopId" column="shopId"/>
+        <result property="userId" column="userId"/>
+        <result property="telephone" column="telephone"/>
+        <result property="gameId" column="gameId"/>
+        <result property="end" column="end"/>
+        <result property="gaccount" column="gaccount"/>
+        <result property="gpassword" column="gpassword"/>
+        <result property="orderDate" column="orderDate"/>
+        <result property="overtime" column="overtime"/>
+        <result property="desc" column="desc"/>
+        <result property="state" column="state"/>
+        <result property="price" column="price"/>
+        <association property="game" javaType="cn.web.tl.entity.Game">
+            <id property="gameId" column="gameId"/>
+            <result property="gameName" column="gameName"/>
+            <result property="sys" column="sys"/>
+            <result property="partition1" column="partition1"/>
+            <result property="partition2" column="partition2"/>
+            <result property="partition3" column="partition3"/>
+        </association>
+        <association property="shop" javaType="cn.web.tl.entity.Shop">
+            <id property="shopId" column="shopId"/>
+            <result property="userId" column="userId"/>
+            <result property="shopname" column="shopname"/>
+            <result property="shopLevel" column="shopLevel"/>
+            <result property="shopBirthday" column="shopBirthday"/>
+        </association>
+        <association property="userShow" javaType="cn.web.tl.entity.UserShow">
+            <id property="id" column="id"/>
+            <result property="gender" column="gender"/>
+            <result property="age" column="age"/>
+            <result property="birthday" column="birthday"/>
+            <result property="createdate" column="createdate"/>
+            <result property="role" column="role"/>
+            <result property="name" column="name"/>
+            <result property="idNum" column="idNum"/>
+            <result property="picPath" column="picPath"/>
+            <result property="zPicPath" column="zPicPath"/>
+            <result property="fPicPath" column="fPicPath"/>
+            <result property="buyercredit" column="buyercredit"/>
+            <result property="sellercredit" column="sellercredit"/>
+         </association>
+        <association property="orderStart" javaType="cn.web.tl.entity.OrderStart">
+            <id property="id" column="id"/>
+            <result property="orderId" column="orderId"/>
+            <result property="indexPic" column="indexPic"/>
+            <result property="levelPic" column="levelPic"/>
+            <result property="golds" column="golds"/>
+            <result property="tickets" column="tickets"/>
+            <result property="diamonds" column="diamonds"/>
+            <result property="finishTime" column="finishTime"/>
+            <result property="checkerId" column="checkerId"/>
+        </association>
+        <association property="orderEnd" javaType="cn.web.tl.entity.OrderEnd">
+            <id property="id" column="id"/>
+            <result property="orderId" column="orderId"/>
+            <result property="indexPic" column="indexPic"/>
+            <result property="levelPic" column="levelPic"/>
+            <result property="golds" column="golds"/>
+            <result property="tickets" column="tickets"/>
+            <result property="diamonds" column="diamonds"/>
+            <result property="finishTime" column="finishTime"/>
+            <result property="factTime" column="factTime"/>
+            <result property="checkerId" column="checkerId"/>
+        </association>
+        <association property="employee" javaType="cn.web.tl.entity.Employee">
+            <id property="eid" column="eid"/>
+            <result property="account" column="account"/>
+            <result property="ename" column="ename"/>
+            <result property="gender" column="gender"/>
+            <result property="birthdate" column="birthdate"/>
+            <result property="email" column="email"/>
+            <result property="phone" column="phone"/>
+            <result property="password" column="password"/>
+            <result property="position" column="position"/>
+            <result property="role" column="role"/>
+            <result property="headimg" column="headimg"/>
+        </association>
     </resultMap>
 
     <resultMap id="orderDesc" type="cn.web.tl.entity.Order">
@@ -43,4 +128,5 @@
             <result property="shopname" column="shopname"/>
         </association>
     </resultMap>
+
 </mapper>

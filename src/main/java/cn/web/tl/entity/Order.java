@@ -31,6 +31,7 @@ public class Order {
     private Long userId;
     private String telephone;
     private String begin;
+    private Integer gameId;
     private String end;
     private String gaccount;
     private String gpassword;
@@ -42,7 +43,52 @@ public class Order {
 
     private Game game;
     private Shop shop;
+    private UserShow userShow;
+    private OrderStart orderStart;
+    private OrderEnd orderEnd;
+    private Employee employee;
 
+    public OrderStart getOrderStart() {
+        return orderStart;
+    }
+
+    public void setOrderStart(OrderStart orderStart) {
+        this.orderStart = orderStart;
+    }
+
+    public OrderEnd getOrderEnd() {
+        return orderEnd;
+    }
+
+    public void setOrderEnd(OrderEnd orderEnd) {
+        this.orderEnd = orderEnd;
+    }
+
+    public Integer getGameId() {
+        return gameId;
+    }
+
+    public void setGameId(Integer gameId) {
+        this.gameId = gameId;
+    }
+
+
+    public UserShow getUserShow() {
+        return userShow;
+    }
+
+    public void setUserShow(UserShow userShow) {
+        this.userShow = userShow;
+    }
+
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
 
     public Shop getShop() {
         return shop;

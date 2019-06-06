@@ -9,4 +9,8 @@ public interface UserShowServices {
 
     Account loginByisDisable(String username);//查询账户是否封禁
 
+    Integer addAccount(String username,String password,String phone);//注册
+
+    Account queryUserByUsername(String account);//查重复
+
 }

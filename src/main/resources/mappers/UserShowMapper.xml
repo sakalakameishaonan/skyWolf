@@ -13,6 +13,9 @@
          SELECT * FROM `account` WHERE phone=#{phone}
     </select>
 
+    <insert id="addAccount" parameterType="cn.web.tl.entity.Account">
+   INSERT INTO `account` VALUES (null, #{account}, #{phone}, #{password}, NOW(), null, '0', null, '0', null, null, null, null, null, '0', null, '0');
+    </insert>
     <insert id="addUser">
 
     </insert>

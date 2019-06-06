@@ -88,16 +88,9 @@
                         <!--<a class="nwb"></a>-->
                     </div>
                     <p class="good-tips marginB10">
-<<<<<<< HEAD
                          <span>还没有账号？<span>
                         <a href="/show/toadd" target="_blank" id="btnRegister">立即注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                  <a class="fr" href="#">忘记密码？</a>
-=======
-                        <a href="#" target="_blank" id="btnRegister">立即注册</a>
-                        <span>还没有账号？<span>
-
-                                <a class="fr" href="#">忘记密码？</a>
->>>>>>> fc10ad51d70a825c72c385ccd1466f68ed17a3e5
                     </p>
                 </form>
             </div>

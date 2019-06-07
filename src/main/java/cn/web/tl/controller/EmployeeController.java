@@ -11,4 +11,9 @@ public class EmployeeController {
     public String log(){
         return "/admin/main";
     }
+
+    @RequestMapping(value = "/toCenter")
+    public String toCenter(){
+        return "/admin/userCenter";
+    }
 }

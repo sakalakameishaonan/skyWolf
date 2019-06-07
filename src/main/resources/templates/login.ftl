@@ -118,6 +118,11 @@ a{
      
 <script type="text/javascript">
 $(function(){
+
+    if(window !=top){
+        top.location.href=location.href;
+    }
+
 	//得到焦点
 	$("#password").focus(function(){
 		$("#left_hand").animate({

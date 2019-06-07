@@ -7,6 +7,7 @@ import java.util.Date;
  * @date 2019-05-29 - 8:33
  */
 public class Order {
+
     /**
      * CREATE TABLE `user_order` (
      *   `id` bigint(20) DEFAULT NULL COMMENT '订单编号',
@@ -46,7 +47,7 @@ public class Order {
     private UserShow userShow;
     private OrderStart orderStart;
     private OrderEnd orderEnd;
-    private Employee employee;
+
 
     public OrderStart getOrderStart() {
         return orderStart;
@@ -82,13 +83,6 @@ public class Order {
     }
 
 
-    public Employee getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
 
     public Shop getShop() {
         return shop;

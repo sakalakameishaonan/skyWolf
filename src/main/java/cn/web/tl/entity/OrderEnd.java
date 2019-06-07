@@ -20,6 +20,16 @@ public class OrderEnd {
     private long checkerId;//审核人Id（员工编号）
     private String desc;//备注信息
 
+    private Employee employee;
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
     public long getId() {
         return id;
     }

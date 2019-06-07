@@ -20,15 +20,23 @@
 
     </div>
     <div id="topr" >
-        <h3 style="color: white;text-align: left;line-height: 50px;text-indent: 1em;">欢迎：${userSession.account}</h3>
-        <h4><span class="white line ib  fright" onClick=logout()>安全退出</span><span class="white line ib  fright" onClick="goindex()">首页</span></h4>
+        <div>
+            <span style="color: white;text-align: left;line-height: 50px;text-indent: 1em;float: left">
+                欢迎：${userSession.account}
+            </span>
+            <span class="white line ib  fright">
+                安全退出
+            </span>
+        </div>
+        <#--<h3 style="color: white;text-align: left;line-height: 50px;text-indent: 1em;">欢迎：蔡徐坤&lt;#&ndash;&ndash;&gt;</h3>-->
+        <#--<h4><span class="white line ib  fright" onClick=logout()>安全退出</span><span class="white line ib  fright" onClick="goindex()">首页</span></h4>-->
 
     </div>
 
     <div id="left">
 
         <div id="adminInfo">
-            <img src="/head-img/a.png" alt="" width="175" height="175">
+            <img src="/head-img/d.jpg" alt="" width="195" height="175" class="img-circle">
         </div>
 
         <div id="leftList" class="white" <#--onClick="checkSession()"-->>
@@ -55,6 +63,10 @@
             <div id="equipDiv" class="none mt-2">
                 <ol><li class="mt-2" onClick="addEquip()">订单管理</li></ol>
                 <ol><li class="mt-2" onClick="equip()">装备管理</li></ol>
+            </div>
+            <ul id="guanli" ><li class="mt-2">(user center)个人中心</li></ul>
+            <div id="equipDiv" class="none mt-2">
+                <ol><li class="mt-2"><a href="/sys/toCenter" target="iframe">个人信息管理</a></li></ol>
             </div>
 
         </div>

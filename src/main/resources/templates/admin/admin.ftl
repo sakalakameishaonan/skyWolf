@@ -20,16 +20,18 @@
 
     </div>
     <div id="topr" >
-
+        <h3 style="color: white;text-align: left;line-height: 50px;text-indent: 1em;">欢迎：${userSession.account}</h3>
         <h4><span class="white line ib  fright" onClick=logout()>安全退出</span><span class="white line ib  fright" onClick="goindex()">首页</span></h4>
 
     </div>
 
     <div id="left">
 
-        <div id="adminInfo"></div>
+        <div id="adminInfo">
+            <img src="/head-img/a.png" alt="" width="175" height="175">
+        </div>
 
-        <div id="leftList" class="white" onClick="checkSession()">
+        <div id="leftList" class="white" <#--onClick="checkSession()"-->>
             <ul id="home"class="mt-5"><li class="mt-2" onClick="javascript:history.go(0)">Home(主页)</li></ul>
             <ul id="equip" ><li class="mt-2">店铺管理</li></ul>
             <div id="equipDiv" class="none mt-2">
@@ -58,13 +60,10 @@
         </div>
     </div>
     <div id="right">
-        <iframe  name="iframe">
+        <iframe  name="iframe" src="/sys/main">
         </iframe>
     </div>
 </div>
 <script type="text/javascript" src="/js/admin.js"></script>
-<script type="text/javascript">
-    iframe.location.href="main.html";
-</script>
 </body>
 </html>

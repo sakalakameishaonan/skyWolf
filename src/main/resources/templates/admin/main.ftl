@@ -23,8 +23,6 @@
         <ul><li class="lis">vip5：<span id="vip5Num"></span> 人</li><li class="lis">vip6：<span id="vip6Num"></span> 人</li></ul>
         <ul><li class="lis">vip7：<span id="vip7Num"></span> 人</li><li class="lis">vip8：<span id="vip8Num"></span> 人</li></ul>
 
-
-
     </div>
 </div>
 </body>

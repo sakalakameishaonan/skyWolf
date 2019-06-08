@@ -32,6 +32,8 @@ public class Order {
     private Long userId;
     private String telephone;
     private String begin;
+
+
     private Integer gameId;
     private String end;
     private String gaccount;

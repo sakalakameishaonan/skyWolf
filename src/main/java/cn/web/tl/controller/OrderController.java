@@ -7,14 +7,12 @@ import cn.web.tl.util.DateUtil;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
-import java.util.Date;
 
 /**
  * @author dxq
@@ -54,7 +52,10 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/doQueryDetails")
-    public String doQueryDetails(){
+    public String doQueryDetails(@RequestParam("id")Long id,Model model){
+        Order order = service.queryDetails(id);
+        logger.info("========================>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+order.getId()+"\t"+order);
+        model.addAttribute("order",order);
         return "/admin/orderDetail";
     }
 

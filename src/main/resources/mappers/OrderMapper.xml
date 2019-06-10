@@ -29,9 +29,10 @@
         LEFT JOIN game ON user_order.gameId = game.gameId
         LEFT JOIN shop on user_order.shopId = shop.shopId
         LEFT JOIN user on user_order.userId = `user`.id
-        LEFT JOIN orderStart  on user_order.id = orderStart.orderId
-        LEFT JOIN orderEnd  on user_order.id = orderEnd.orderId
-        LEFT JOIN employee on c1.checkerId = employee.eid
+        LEFT JOIN order_start  on user_order.id = order_start.orderId
+        LEFT JOIN employee e1 on order_start.checkerId = e1.eid
+        LEFT JOIN order_end  on user_order.id = order_end.orderId
+        LEFT JOIN employee e2 on order_end.checkerId = e2.eid
         where user_order.id = #{id}
     </select>
 
@@ -41,6 +42,7 @@
         <result property="userId" column="userId"/>
         <result property="telephone" column="telephone"/>
         <result property="gameId" column="gameId"/>
+        <result property="begin" column="begin"/>
         <result property="end" column="end"/>
         <result property="gaccount" column="gaccount"/>
         <result property="gpassword" column="gpassword"/>
@@ -79,6 +81,7 @@
             <result property="buyercredit" column="buyercredit"/>
             <result property="sellercredit" column="sellercredit"/>
          </association>
+
         <association property="orderStart" javaType="cn.web.tl.entity.OrderStart">
             <id property="id" column="id"/>
             <result property="orderId" column="orderId"/>
@@ -89,7 +92,9 @@
             <result property="diamonds" column="diamonds"/>
             <result property="finishTime" column="finishTime"/>
             <result property="checkerId" column="checkerId"/>
+            <association property="employee" javaType="cn.web.tl.entity.Employee" resultMap="empresult"/>
         </association>
+
         <association property="orderEnd" javaType="cn.web.tl.entity.OrderEnd">
             <id property="id" column="id"/>
             <result property="orderId" column="orderId"/>
@@ -101,20 +106,23 @@
             <result property="finishTime" column="finishTime"/>
             <result property="factTime" column="factTime"/>
             <result property="checkerId" column="checkerId"/>
+            <association property="employee" javaType="cn.web.tl.entity.Employee" resultMap="empresult"/>
         </association>
-        <association property="employee" javaType="cn.web.tl.entity.Employee">
-            <id property="eid" column="eid"/>
-            <result property="account" column="account"/>
-            <result property="ename" column="ename"/>
-            <result property="gender" column="gender"/>
-            <result property="birthdate" column="birthdate"/>
-            <result property="email" column="email"/>
-            <result property="phone" column="phone"/>
-            <result property="password" column="password"/>
-            <result property="position" column="position"/>
-            <result property="role" column="role"/>
-            <result property="headimg" column="headimg"/>
-        </association>
+    </resultMap>
+
+    <resultMap id="empresult" type="cn.web.tl.entity.Employee">
+        <id property="eid" column="eid"/>
+        <result property="account" column="account"/>
+        <result property="ename" column="ename"/>
+        <result property="gender" column="gender"/>
+        <result property="birthdate" column="birthdate"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="password" column="password"/>
+        <result property="address" column="address"/>
+        <result property="position" column="position"/>
+        <result property="role" column="role"/>
+        <result property="headimg" column="headimg"/>
     </resultMap>
 
     <resultMap id="orderDesc" type="cn.web.tl.entity.Order">

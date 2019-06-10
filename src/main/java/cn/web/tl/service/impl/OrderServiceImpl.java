@@ -28,4 +28,9 @@ public class OrderServiceImpl implements OrderService {
         PageInfo<Order> pageInfo = new PageInfo<>(list);
         return pageInfo;
     }
+
+    @Override
+    public Order queryDetails(Long id) {
+        return mapper.queryDetails(id);
+    }
 }

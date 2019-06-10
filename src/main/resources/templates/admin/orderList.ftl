@@ -56,7 +56,7 @@
                             <#else>已提交
                             </#if>
                         </td>
-                        <td><a href="/sys/doQueryDetails?id=${id}" class="text-muted">查看详情</a></td>
+                        <td><a href="/sys/doQueryDetails?id=${o.id}" class="text-muted">查看详情</a></td>
                     </tr>
                 </#list>
             </tbody>

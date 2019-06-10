@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+        ul{list-style: none;}
+    </style>
 </head>
 <body>
 

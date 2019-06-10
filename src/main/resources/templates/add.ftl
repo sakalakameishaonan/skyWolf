@@ -217,7 +217,7 @@
 <div class="st">
     <table border=0>
         <div class="login_title">
-            <p><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>注册账户</p>
+            <p><a href="/"><img src="/loginshow/logo.png" style="width:80px;height:80px;margin-right:30px;"/>注册账户</a></p>
         </div>
     </table>
     <table border=0>

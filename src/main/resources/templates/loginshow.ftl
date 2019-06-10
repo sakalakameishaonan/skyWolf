@@ -73,11 +73,11 @@
                 <form action="/show/login" method="post" id="myform">
                     <div class="username">
                         <img src="/loginshow/username.png" alt="">
-                        <input type="text" class="username" name="username" value="${username}" placeholder="请输入用户名">
+                        <input type="text" class="username" name="username" value="${username}" placeholder="请输入用户名/已验证手机">
                     </div>
                     <div class="password">
                         <img src="/loginshow/password.png" alt="">
-                        <input type="text" class="password" name="pwd" placeholder="请输入密码">
+                        <input type="password" class="password" name="pwd" placeholder="请输入密码">
                     </div>
                     <div class="yes_login">
                         <p align="center" class="resultname"> </p>

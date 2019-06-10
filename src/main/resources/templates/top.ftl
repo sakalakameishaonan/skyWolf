@@ -10,7 +10,7 @@
     <link rel="icon" href="/imgs/title/tl.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/css/recommend.css">
     <link rel="stylesheet" type="text/css" href="/css/navigation.css">
-    <script src="/webjars/jquery/3.4.1/jquery.js"></script>
+
     <style type="text/css">
         .menu {clear: left;}
         .indexSy{
@@ -69,12 +69,11 @@
                     <li><a href="/show/toadd" class="nav-a">免费注册</a></li>
                 </ul>
             </div>
+            <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.js"></script>
             <script type="text/javascript">
-                var username =${alist.account};
                 $(document).ready(function(){
-                    alert(username);
-                    if(username!=null){
-                        alert(username);
+                    var username = "${alist.account}";
+                    if(username!=null&&username!=""){
                         $("#info").show();
                         $("#login1").hide();
                     }else{
@@ -85,7 +84,17 @@
             </script>
             <div id="info">
                 <ul>
-                    <li><a href="/show/userinfo" class="login-nav ">${alist.account}</a></li>
+                    <li><a href="/show/userinfo" class="login-nav ">欢迎您&nbsp;&nbsp;&nbsp;${alist.account}&nbsp;!&nbsp;&nbsp;</a></li>
+                    <script type="text/javascript">
+                        $(function () {
+                            $(".nav-a" ).click(function (msg) {
+                                window.location ="/";
+                                if (msg!=null) {
+                                    alert("成功退出登录！");
+                                }
+                            })
+                        });
+                    </script>
                     <li><a href="" class="nav-a">退出</a></li>
                 </ul>
             </div>

@@ -21,7 +21,8 @@ public class UserShowController {
     private UserShowServices services;
 
     @RequestMapping(value = "/tologin")
-    public String toLogin() {
+    public String toLogin(HttpSession session) {
+        session.invalidate();
         return "loginshow";
 
     }
@@ -32,16 +33,16 @@ public class UserShowController {
         System.out.println(account);
         if (account == null) {
             model.addFlashAttribute("username", username);
-            model.addFlashAttribute("msg", "账号或密码错误，请重新输入");
-            return "redirect:/tologin";
+            model.addFlashAttribute("msg", "用户名不存在");
+            return "redirect:/show/tologin";
         } else if (account.getPassword().equals(pwd)) {
             System.out.println("2222" + account);
             session.setAttribute("alist", account);
             return "/";
         } else {
             model.addFlashAttribute("username", username);
-            model.addFlashAttribute("msg", "账号或密码错误，请重新输入");
-            return "redirect:/tologin";
+            model.addFlashAttribute("msg", "用户名或密码错误，请重新输入");
+            return "redirect:/show/tologin";
         }
     }
 
@@ -61,6 +62,11 @@ public class UserShowController {
         }
         return JSON.toJSONString(flag);
 
+    }
+    @RequestMapping(value = "/to404")
+    public String to404(){
+
+        return "errorshow";
     }
 
 

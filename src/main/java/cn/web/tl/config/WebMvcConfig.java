@@ -59,4 +59,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
         //拦截/sys/下面所有请求
         registry.addInterceptor(loginHandlerInterceptor).addPathPatterns("/sys/**");
     }
+
+    /*@Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/fileUploads/**").addResourceLocations("C:\\Users\\DXQ\\Desktop\\項目文件\\skyWolf\\src\\main\\resources\\static\\fileUploads");
+    }*/
 }

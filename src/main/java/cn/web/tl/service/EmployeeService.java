@@ -1,6 +1,7 @@
 package cn.web.tl.service;
 
 import cn.web.tl.entity.Employee;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author dxq
@@ -9,4 +10,9 @@ import cn.web.tl.entity.Employee;
 public interface EmployeeService {
 
     Employee login(String account, String pwd);
+
+
+    int updateEmp(Employee employee);
+
+    Employee getEmpById(Long id);
 }

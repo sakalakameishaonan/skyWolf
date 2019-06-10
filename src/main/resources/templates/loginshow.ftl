@@ -73,11 +73,11 @@
                 <form action="/show/login" method="post" id="myform">
                     <div class="username">
                         <img src="/loginshow/username.png" alt="">
-                        <input type="text" class="username" name="username" value="${username}" placeholder="请输入用户名">
+                        <input type="text" class="username" name="username" value="${username}" placeholder="请输入用户名/已验证手机">
                     </div>
                     <div class="password">
                         <img src="/loginshow/password.png" alt="">
-                        <input type="text" class="password" name="pwd" placeholder="请输入密码">
+                        <input type="password" class="password" name="pwd" placeholder="请输入密码">
                     </div>
                     <div class="yes_login">
                         <p align="center" class="resultname"> </p>
@@ -88,16 +88,9 @@
                         <!--<a class="nwb"></a>-->
                     </div>
                     <p class="good-tips marginB10">
-<<<<<<< HEAD
                          <span>还没有账号？<span>
                         <a href="/show/toadd" target="_blank" id="btnRegister">立即注册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                  <a class="fr" href="#">忘记密码？</a>
-=======
-                        <a href="#" target="_blank" id="btnRegister">立即注册</a>
-                        <span>还没有账号？<span>
-
-                                <a class="fr" href="#">忘记密码？</a>
->>>>>>> fc10ad51d70a825c72c385ccd1466f68ed17a3e5
                     </p>
                 </form>
             </div>

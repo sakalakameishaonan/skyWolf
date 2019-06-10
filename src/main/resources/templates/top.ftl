@@ -10,7 +10,7 @@
     <link rel="icon" href="/imgs/title/tl.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/css/recommend.css">
     <link rel="stylesheet" type="text/css" href="/css/navigation.css">
-    <script src="/webjars/jquery/3.4.1/jquery.js"></script>
+
     <style type="text/css">
         .menu {clear: left;}
         .indexSy{
@@ -63,32 +63,44 @@
 <div id="bigTop">
     <div id="top-nav">
         <div class="site-nav">
-            <div>
+            <div id="login1">
                 <ul>
                     <li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>
                     <li><a href="/show/toadd" class="nav-a">免费注册</a></li>
                 </ul>
             </div>
-            <#--<script type="text/javascript">-->
-                <#--var username =${alist};-->
-                <#--$(document).ready(function(){-->
-                    <#--$("#info").click(function(){-->
-                        <#--$("p").hide();-->
-                    <#--});-->
-                    <#--$("#info").click(function(){-->
-                        <#--$("p").show();-->
-                    <#--});-->
-                <#--});-->
-            <#--</script>-->
-            <#--<div id="info">-->
-                <#--<ul>-->
-                    <#--<li><a href="/show/tologin" class="login-nav ">您好，请登录</a></li>-->
-                    <#--<li><a href="" class="nav-a">免费注册</a></li>-->
-                <#--</ul>-->
-            <#--</div>-->
+            <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    var username = "${alist.account}";
+                    if(username!=null&&username!=""){
+                        $("#info").show();
+                        $("#login1").hide();
+                    }else{
+                        $("#info").hide();
+                        $("#login1").show();
+                    }
+                });
+            </script>
+            <div id="info">
+                <ul>
+                    <li><a href="/show/userinfo" class="login-nav ">欢迎您&nbsp;&nbsp;&nbsp;${alist.account}&nbsp;!&nbsp;&nbsp;</a></li>
+                    <script type="text/javascript">
+                        $(function () {
+                            $(".nav-a" ).click(function (msg) {
+                                window.location ="/";
+                                if (msg!=null) {
+                                    alert("成功退出登录！");
+                                }
+                            })
+                        });
+                    </script>
+                    <li><a href="" class="nav-a">退出</a></li>
+                </ul>
+            </div>
             <div>
                 <ul class="nav-ul-right">
-                    <li><a href="">我的天狼</a></li>
+                    <li><a href="/">我的天狼</a></li>
                     <li><span>|</span></li>
                     <li><a href="">我的收藏</a></li>
                     <li><span>|</span></li>

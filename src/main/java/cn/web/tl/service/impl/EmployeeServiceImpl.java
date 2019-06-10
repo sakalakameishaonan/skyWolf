@@ -21,4 +21,14 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee login(String account, String pwd) {
         return mapper.login(account,pwd);
     }
+
+    @Override
+    public int updateEmp(Employee employee) {
+        return mapper.updateEmp(employee);
+    }
+
+    @Override
+    public Employee getEmpById(Long id) {
+        return mapper.getEmpById(id);
+    }
 }

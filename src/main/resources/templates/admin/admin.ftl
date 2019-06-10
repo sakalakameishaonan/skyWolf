@@ -36,7 +36,7 @@
     <div id="left">
 
         <div id="adminInfo">
-            <img src="/head-img/d.jpg" alt="" width="195" height="175" class="img-circle">
+            <img src="${userSession.headimg}" alt="" width="195" height="175" class="img-circle">
         </div>
 
         <div id="leftList" class="white" <#--onClick="checkSession()"-->>
@@ -44,7 +44,7 @@
             <ul id="equip" ><li class="mt-2">店铺管理</li></ul>
             <div id="equipDiv" class="none mt-2">
                 <ol><li class="mt-2">商店列表</li></ol>
-                <ol><li class="mt-2">开店申请</li></ol>
+                <ol><li class="mt-2"><a href="/shop/openShop" target="iframe">开店申请</a></li></ol>
             </div>
 
             <!--玩家点击够买付款完毕有条未读订单查看-->

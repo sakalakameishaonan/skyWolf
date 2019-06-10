@@ -15,60 +15,57 @@
 </head>
 <body>
 
-<script>
-    $(document).ready(function(){
-        $("#open").click(function() {
-            cover.style.display="block";   //显示遮罩层
-            modal.style.display="block";   //显示弹出层
-        })
-        $("#close").click(function() {
-            cover.style.display="none";   //隐藏遮罩层
-            modal.style.display="none";   //隐藏弹出层
-        })
-    })
-</script>
-<style type="text/css">
-    #cover{
-        position:absolute;
-        left:0px;
-        top:0px;
-        background:rgba(0, 0, 0, 0.4);
-        width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
-        height:100%;
-        filter:alpha(opacity=60);  /*设置透明度为60%*/
-        opacity:0.6;  /*非IE浏览器下设置透明度为60%*/
-        display:none;
-        z-Index:999;
-    }
-    #modal{
-        position:absolute;
-        width:500px;
-        height:500px;
-        top:50%;
-        left:50%;
-        background-color:#fff;
-        display:none;
-        cursor:pointer;
-        z-Index:9999;
+<#--<script>-->
+    <#--$(document).ready(function(){-->
+        <#--$("#open").click(function() {-->
+            <#--cover.style.display="block";   //显示遮罩层-->
+            <#--modal.style.display="block";   //显示弹出层-->
+        <#--})-->
+        <#--$("#close").click(function() {-->
+            <#--cover.style.display="none";   //隐藏遮罩层-->
+            <#--modal.style.display="none";   //隐藏弹出层-->
+        <#--})-->
+    <#--})-->
+<#--</script>-->
+<#--<style type="text/css">-->
+    <#--#cover{-->
+        <#--position:absolute;-->
+        <#--left:0px;-->
+        <#--top:0px;-->
+        <#--background:rgba(0, 0, 0, 0.4);-->
+        <#--width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/-->
+        <#--height:100%;-->
+        <#--filter:alpha(opacity=60);  /*设置透明度为60%*/-->
+        <#--opacity:0.6;  /*非IE浏览器下设置透明度为60%*/-->
+        <#--display:none;-->
+        <#--z-Index:999;-->
+    <#--}-->
+    <#--#modal{-->
+        <#--position:absolute;-->
+        <#--width:500px;-->
+        <#--height:500px;-->
+        <#--top:50%;-->
+        <#--left:50%;-->
+        <#--background-color:#fff;-->
+        <#--display:none;-->
+        <#--cursor:pointer;-->
+        <#--z-Index:9999;-->
 
-    }
-</style>
-<div id="body"> 显示页面的全部内容
-    <div id="open">打开弹框</div>
-</div>
-//页面的遮罩层
-<div id="cover">
-
-</div>
-//页面的弹出框
-<div id="modal">
-    <div id="close">关闭弹框
-       </div>
-    <P> <span>
-            您的个人信息不完全！建议您补全给人信息
-            </span></P>
-    <a href="#">前往补全个人信息</a>
-</div>
+    <#--}-->
+<#--</style>-->
+<#--<div id="body">-->
+    <#--<div id="open">打开弹框</div>-->
+<#--</div>-->
+<#--<div id="cover">-->
+<#--</div>-->
+<#--<div id="modal">-->
+    <#--<div id="close">关闭弹框-->
+       <#--</div>-->
+    <#--<P> <span>-->
+            <#--您的个人信息不完全！建议您补全给人信息-->
+            <#--</span></P>-->
+    <#--<a href="#">前往补全个人信息</a>-->
+<#--</div>-->
 
 <#include "top.ftl">
 <#include "show.ftl">

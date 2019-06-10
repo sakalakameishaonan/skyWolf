@@ -104,6 +104,8 @@
                         $(this).val("");
                         $(".resulpwd1").html("");
                     });
+                }else {
+                    $(".resultpwd1").html("").css("color", "red");
                 }
 
             });
@@ -149,6 +151,8 @@
                         $(this).val("");
                         $(".resultcode").html("");
                     });
+                }else {
+                    $(".resultcode").html("").css("color", "red");
                 }
 
             });

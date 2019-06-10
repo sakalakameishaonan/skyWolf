@@ -89,9 +89,7 @@
                         $(function () {
                             $(".nav-a" ).click(function (msg) {
                                 window.location ="/";
-                                if (msg!=null) {
-                                    alert("成功退出登录！");
-                                }
+
                             })
                         });
                     </script>

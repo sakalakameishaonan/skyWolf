@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @date 2019-06-08 11:30
  */
 @Controller
-@RequestMapping("/sys")
+@RequestMapping("/orderCheck")
 public class CSController {
 
     @RequestMapping("/toOrderCheck")

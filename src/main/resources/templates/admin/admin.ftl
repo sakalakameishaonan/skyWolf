@@ -36,42 +36,42 @@
     <div id="left">
 
         <div id="adminInfo">
-            <img src="${userSession.headimg}" alt="" width="195" height="175" class="img-circle">
+            <img src="${userSession.headimg}" alt="头像" width="195" height="175" class="img-circle">
         </div>
 
         <div id="leftList" class="white" <#--onClick="checkSession()"-->>
             <ul id="home"class="mt-5"><li class="mt-2" onClick="javascript:history.go(0)">Home(主页)</li></ul>
-            <ul id="equip" ><li class="mt-2">店铺管理</li></ul>
+            <ul id="equip" ><li class="mt-2">（Shop）店铺管理</li></ul>
             <div id="equipDiv" class="none mt-2">
                 <ol><li class="mt-2">商店列表</li></ol>
                 <ol><li class="mt-2"><a href="/shop/openShop" target="iframe">开店申请</a></li></ol>
             </div>
 
             <!--玩家点击够买付款完毕有条未读订单查看-->
-            <ul id="uuid"><li class="mt-2">Order(订单)</li></ul>
+            <ul id="uuid"><li class="mt-2">（Order）订单</li></ul>
             <div id="uuidDiv"  class="none mt-2">
                 <ol><li class="mt-2"><a href="/sys/toOrder" target="iframe">订单查询</a></li></ol>
-                <ol><li class="mt-2">所有订单</li></ol>
+               <#-- <ol><li class="mt-2">所有订单</li></ol>-->
             </div>
-            <ul id="userDm"><li class="mt-2">UserDm(玩家)</li></ul>
+           <#-- <ul id="userDm"><li class="mt-2">UserDm(玩家)</li></ul>
             <div id="userDmDiv"  class="none mt-2">
                 <ol><li class="mt-2" >玩家管理</li></ol>
 
-            </div>
+            </div>-->
 
-            <ul id="guanli" ><li class="mt-2">管理员管理</li></ul>
+            <#--<ul id="guanli" ><li class="mt-2">管理员管理</li></ul>
             <div id="equipDiv" class="none mt-2">
                 <ol><li class="mt-2" onClick="addEquip()">订单管理</li></ol>
                 <ol><li class="mt-2" onClick="equip()">装备管理</li></ol>
-            </div>
-            <ul id="guanli" ><li class="mt-2">(user center)个人中心</li></ul>
+            </div>-->
+            <ul id="guanli" ><li class="mt-2">(UserCenter)个人中心</li></ul>
             <div id="equipDiv" class="none mt-2">
                 <ol><li class="mt-2"><a href="/sys/toCenter" target="iframe">个人信息管理</a></li></ol>
             </div>
 
             <ul id="guanli" ><li class="mt-2">(CS)客户服务</li></ul>
             <div id="equipDiv" class="none mt-2">
-                <ol><li class="mt-2"><a href="/sys/toOrderCheck" target="iframe">订单审核</a></li></ol>
+                <ol><li class="mt-2"><a href="/orderCheck/toOrderCheck" target="iframe">订单审核</a></li></ol>
             </div>
         </div>
     </div>

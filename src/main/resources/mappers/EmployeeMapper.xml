@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.web.tl.dao.EmployeeMapper">
+    <update id="updateEmp" parameterType="cn.web.tl.entity.Employee">
+        update employee
+        <set>
+            ename=#{ename},
+            phone=#{phone},
+            email=#{email},
+            address=#{address},
+            <if test="headimg != null">
+                headimg=#{headimg}
+            </if>
+        </set>
+        where eid = #{eid}
+    </update>
+
     <select id="login" resultType="cn.web.tl.entity.Employee">
         select * from employee where account=#{account} and password=#{pwd}
+    </select>
+    <select id="getEmpById" resultType="cn.web.tl.entity.Employee">
+        select * from employee where eid = #{id}
     </select>
 </mapper>

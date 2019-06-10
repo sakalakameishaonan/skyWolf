@@ -34,7 +34,6 @@ spring:
     allow-request-override: false
     settings:
       classic_compatible: true
-
 server:
   port: 8081
 #  servlet:
@@ -45,3 +44,6 @@ mybatis:
 pagehelper:
   helper-dialect: mysql
   reasonable: true
+
+
+

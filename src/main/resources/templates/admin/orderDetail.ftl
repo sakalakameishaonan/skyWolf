@@ -17,7 +17,11 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+
+
+
         $(function () {
+            window.setInterval()
             $("h1").show("fast","linear");
         });
     </script>
@@ -50,7 +54,7 @@
                 代练信息
             </a>
         </li>
-        <li>
+        <#--<li>
             <a href="#mai" data-toggle="tab">
                 买家信息
             </a>
@@ -59,7 +63,7 @@
             <a href="#shou" data-toggle="tab">
                 卖家信息
             </a>
-        </li>
+        </li>-->
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade in active" id="ding">
@@ -154,12 +158,12 @@
             </div>
             <br><br><br>
         </div>
-        <div class="tab-pane fade" id="mai">
+        <#--<div class="tab-pane fade" id="mai">
             <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
         </div>
         <div class="tab-pane fade" id="shou">
             <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
-        </div>
+        </div>-->
     </div>
 </div>
 </body>

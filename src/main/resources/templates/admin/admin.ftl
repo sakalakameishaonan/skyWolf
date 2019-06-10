@@ -36,7 +36,7 @@
     <div id="left">
 
         <div id="adminInfo">
-            <img src="/head-img/d.jpg" alt="" width="195" height="175" class="img-circle">
+            <img src="${userSession.headimg}" alt="" width="195" height="175" class="img-circle">
         </div>
 
         <div id="leftList" class="white" <#--onClick="checkSession()"-->>

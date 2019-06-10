@@ -68,7 +68,7 @@
 <#--</div>-->
 
 <#include "top.ftl">
-<#include "show.ftl">
+<#include "show1.ftl">
 <#include "footer.ftl">
 
 

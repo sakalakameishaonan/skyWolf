@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.web.tl.dao.ShopDao">
+
+    <select id="queryAllShopInfo" resultType="cn.web.tl.entity.ShopInfo">
+        select * from shopInfo
+        <where>
+            <if test="title!=null and title!=null">
+                title like concat('%',#{title},'%')
+            </if>
+        </where>
+    </select>
+</mapper>

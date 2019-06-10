@@ -35,5 +35,20 @@ public class UserShowServicesImpl implements UserShowServices {
     public Account loginByisDisable(String username) {
         return null;
     }
+
+    @Override
+    public Integer addAccount(String username, String password, String phone) {
+        Account account=new Account();
+        account.setAccount(username);
+        account.setPassword(password);
+        account.setPhone(phone);
+        return dao.addAccount(account);
+    }
+
+    @Override
+    public Account queryUserByUsername(String account) {
+
+        return dao.loginByaccount(account);
+    }
 }
 

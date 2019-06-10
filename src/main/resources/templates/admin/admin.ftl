@@ -69,6 +69,10 @@
                 <ol><li class="mt-2"><a href="/sys/toCenter" target="iframe">个人信息管理</a></li></ol>
             </div>
 
+            <ul id="guanli" ><li class="mt-2">(CS)客户服务</li></ul>
+            <div id="equipDiv" class="none mt-2">
+                <ol><li class="mt-2"><a href="/sys/toOrderCheck" target="iframe">订单审核</a></li></ol>
+            </div>
         </div>
     </div>
     <div id="right">

@@ -9,7 +9,7 @@ public interface UserDao {
 
     Account loginByphone(@Param("phone") String phone);
 
-
+    Integer addAccount(Account account);
 
     Account addByphone(String account);
 

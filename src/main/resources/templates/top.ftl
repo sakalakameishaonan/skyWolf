@@ -73,18 +73,32 @@
             <script type="text/javascript">
                 $(document).ready(function(){
                     var username = "${alist.account}";
+                    var role="${alist.role}";
+                    alert(role);
                     if(username!=null&&username!=""){
-                        $("#info").show();
-                        $("#login1").hide();
+                        alert(role);
+                        if (role == "0"){
+                            alert(role);
+                            $("#info").show();
+                            $("#login1").hide();
+                            $(".myshop").hide();
+                        }else {
+                            alert(role)
+                            $(".myshop").show();
+                            $("#info").show();
+                            $("#login1").hide();
+                        }
                     }else{
                         $("#info").hide();
                         $("#login1").show();
                     }
                 });
+
             </script>
             <div id="info">
                 <ul>
                     <li><a href="/show/userinfo" class="login-nav ">欢迎您&nbsp;&nbsp;&nbsp;${alist.account}&nbsp;!&nbsp;&nbsp;</a></li>
+                    <li class="myshop"><a href="" class="shop">我的店铺</a></li>
                     <script type="text/javascript">
                         $(function () {
                             $(".quit" ).click(function (n) {

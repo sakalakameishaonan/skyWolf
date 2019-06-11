@@ -45,6 +45,7 @@
         <result property="unblocktime" column="unblocktime"/>
         <result property="bansnum" column="bansnum"/>
         <result property="qqopenid" column="qqopenid"/>
+        <result property="role" column="role"/>
         <result property="userid" column="userid"/>
         <association property="userShow" javaType="cn.web.tl.entity.UserShow">
             <id property="id" column="id"/>

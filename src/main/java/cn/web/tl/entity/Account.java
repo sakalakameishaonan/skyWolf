@@ -16,6 +16,7 @@ package cn.web.tl.entity;
   `Unblocktime` timestamp NULL DEFAULT NULL COMMENT '解封时间',
   `bansnum` int(11) DEFAULT '0' COMMENT '封禁次数',
   `qqopenid` varchar(255) DEFAULT NULL COMMENT 'qq关联id',
+  role 个人信息
   `userid` bigint(20) DEFAULT NULL COMMENT '用户信息关联编号',
  */
 
@@ -39,6 +40,7 @@ public class Account {
     private Date unblocktime;
     private Integer bansnum;
     private String qqopenid;
+    private int role;
     private Integer userid;
     private UserShow userShow;
 
@@ -48,6 +50,14 @@ public class Account {
 
     public void setUserShow(UserShow userShow) {
         this.userShow = userShow;
+    }
+
+    public int getRole() {
+        return role;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
     }
 
     public int getAid() {

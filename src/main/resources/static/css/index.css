@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;}
-body{overflow-x: hidden;}
+body{overflow-x: hidden;float: left;}
 .nav-a:link {color: #777 } 
 .nav-a:visited {color: #777} 
 .nav-a:hover {color: red;} 

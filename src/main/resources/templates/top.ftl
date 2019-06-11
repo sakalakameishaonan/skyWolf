@@ -127,8 +127,8 @@
             </div>
             <div class="mid-right">
                 <div>
-                    <form action="">
-                        <input type="text" class="main-search main-ipt" placeholder="请输入任意关键字"><input type="button" name="搜索"  value="搜索" class="main-btn main-ipt">
+                    <form action="/">
+                        <input type="text" class="main-search main-ipt" placeholder="请输入任意关键字" name="title"><input type="submit" name="搜索"  value="搜索" class="main-btn main-ipt">
                     </form>
                 </div>
                 <div style="margin: 5px 14px">

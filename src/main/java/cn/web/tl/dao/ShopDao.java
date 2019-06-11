@@ -11,4 +11,5 @@ import java.util.List;
  */
 public interface ShopDao {
     List<ShopInfo> queryAllShopInfo(@Param("title")String title);
+    int addNewShop(int userId,int shopLevel,String shopname);
 }

@@ -10,4 +10,7 @@ import com.github.pagehelper.PageInfo;
  */
 public interface shopInfoService {
     PageInfo<ShopInfo> queryAllShopInfo(Integer page,Integer size,String title);
+
+    //开一个新店
+    int openNewShop(int userId,int shopLevel,String shopname);
 }

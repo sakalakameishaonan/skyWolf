@@ -26,4 +26,10 @@ public class shopInfoServiceImpl implements shopInfoService {
         PageInfo<ShopInfo> pageInfo=new PageInfo<>(list);
         return pageInfo;
     }
+
+    @Override
+    public int openNewShop(int userId, int shopLevel, String shopname) {
+        int rs=dao.addNewShop(userId,shopLevel,shopname);
+        return rs;
+    }
 }

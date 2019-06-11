@@ -58,14 +58,15 @@
     </style>
 </head>
 <body>
-<form action="" method="get" id="openShop">
+<form action="/shop/toOpenShop" method="get" id="openShop">
     <div id="openShop_title">
         注册开店
     </div>
     <div id="openShop_body">
         <div class="openShop_input">
             <p class="input_style">店铺名称：
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" id="shopname" name="shopname"/>&nbsp;&nbsp;<span class="shop_name">请输入店名</span>
             </p>
         </div>

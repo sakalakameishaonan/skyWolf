@@ -11,4 +11,8 @@
             </if>
         </where>
     </select>
+
+    <insert id="addNewShop" >
+        insert into shop values (null,#{userId},#{shopLevel},0,now(),#{shopname})
+    </insert>
 </mapper>

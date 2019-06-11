@@ -1,8 +1,8 @@
 spring:
   datasource:
     username: root
-    password: root
-    url: jdbc:mysql://localhost:3306/tl_db?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+    password: 123456
+    url: jdbc:mysql://129.28.176.18:3306/tl_db?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
@@ -34,8 +34,9 @@ spring:
     allow-request-override: false
     settings:
       classic_compatible: true
+
 server:
-  port: 8080
+  port: 8081
 #  servlet:
 #    context-path: /sk
 mybatis:
@@ -44,9 +45,3 @@ mybatis:
 pagehelper:
   helper-dialect: mysql
   reasonable: true
-
-
-
-
-
-

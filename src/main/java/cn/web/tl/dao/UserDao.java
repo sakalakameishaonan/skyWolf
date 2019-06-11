@@ -15,4 +15,6 @@ public interface UserDao {
 
     UserShow addUser(UserShow user);
 
+    Account loginByqqopenid(@Param("qqopenid") String qqopenid);
+
 }

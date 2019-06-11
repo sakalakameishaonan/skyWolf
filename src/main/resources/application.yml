@@ -35,7 +35,7 @@ spring:
     settings:
       classic_compatible: true
 server:
-  port: 8081
+  port: 8080
 #  servlet:
 #    context-path: /sk
 mybatis:
@@ -44,6 +44,9 @@ mybatis:
 pagehelper:
   helper-dialect: mysql
   reasonable: true
+
+
+
 
 
 

@@ -83,7 +83,7 @@
                         <p align="center" class="resultname"> </p>
                         <a href="#" onclick="document.getElementById('myform').submit();return false;">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                     </div>
-                    <div class="threeLogin"><span>其他方式登录</span>&nbsp;&nbsp;&nbsp;<a class="nqq" href="javascript:;"></a><a class="nwx"
+                    <div class="threeLogin"><span>其他方式登录</span>&nbsp;&nbsp;&nbsp;<a class="nqq" href="/qqLogin"></a><a class="nwx"
                                                                                                                            href="javascript:;"></a>
                         <!--<a class="nwb"></a>-->
                     </div>

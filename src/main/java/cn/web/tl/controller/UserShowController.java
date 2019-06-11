@@ -74,7 +74,7 @@ public class UserShowController {
     public String add(String username, String password, String phone,HttpSession session) {
         Integer n = services.addAccount(username, password, phone);
         if (n != 0 && n != null) {
-            session.setAttribute("ulist",services.queryUserByUsername(username));
+            session.setAttribute("alist",services.queryUserByUsername(username));
             return "/";
         } else {
             return "";

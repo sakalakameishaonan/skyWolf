@@ -14,12 +14,12 @@ import javax.servlet.http.HttpSession;
 @RequestMapping(value = "/quit")
 public class QuitLogin {
 
-    @RequestMapping(value = "exit", produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/exit", produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public String quit(HttpSession session){
         session.invalidate();
-        String msg="成功退出登录！";
-        return JSON.toJSONString(msg);
+        int n=1;
+        return JSON.toJSONString(n);
 
     }
 }

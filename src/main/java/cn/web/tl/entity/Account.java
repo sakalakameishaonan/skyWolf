@@ -36,10 +36,19 @@ public class Account {
     private Date updatepasswordtime;
     private Date bantime;
     private String banReason;
-    private Date Unblocktime;
+    private Date unblocktime;
     private Integer bansnum;
     private String qqopenid;
     private Integer userid;
+    private UserShow userShow;
+
+    public UserShow getUserShow() {
+        return userShow;
+    }
+
+    public void setUserShow(UserShow userShow) {
+        this.userShow = userShow;
+    }
 
     public int getAid() {
         return aid;
@@ -146,11 +155,11 @@ public class Account {
     }
 
     public Date getUnblocktime() {
-        return Unblocktime;
+        return unblocktime;
     }
 
     public void setUnblocktime(Date unblocktime) {
-        Unblocktime = unblocktime;
+        this.unblocktime = unblocktime;
     }
 
     public Integer getBansnum() {
@@ -193,10 +202,11 @@ public class Account {
                 .add("updatepasswordtime=" + updatepasswordtime)
                 .add("bantime=" + bantime)
                 .add("banReason='" + banReason + "'")
-                .add("Unblocktime=" + Unblocktime)
-                .add("bansnum='" + bansnum + "'")
+                .add("unblocktime=" + unblocktime)
+                .add("bansnum=" + bansnum)
                 .add("qqopenid='" + qqopenid + "'")
                 .add("userid=" + userid)
+                .add("userShow=" + userShow)
                 .toString();
     }
 }

@@ -87,13 +87,22 @@
                     <li><a href="/show/userinfo" class="login-nav ">欢迎您&nbsp;&nbsp;&nbsp;${alist.account}&nbsp;!&nbsp;&nbsp;</a></li>
                     <script type="text/javascript">
                         $(function () {
-                            $(".nav-a" ).click(function (msg) {
-                                window.location ="/";
+                            $(".quit" ).click(function (n) {
+                                // $.post("/quit/exit",
+                                //     function (n) {
+                                //
+                                //     },"json")
+                                if (n=1){
 
-                            })
+                                                 alert("退出成功！")
+                                           }
+                                sessionStorage.clear()
+                                window.location.reload()
+
+                            });
                         });
                     </script>
-                    <li><a href="" class="nav-a">退出</a></li>
+                    <li><a href="" class="quit">退出</a></li>
                 </ul>
             </div>
             <div>

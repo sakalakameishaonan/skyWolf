@@ -15,6 +15,21 @@
 </head>
 <body>
 
+<<<<<<< Updated upstream
+=======
+<script>
+    $(document).ready(function(){
+        $("#open").click(function() {
+            cover.style.display="block";   //显示遮罩层
+            modal.style.display="block";   //显示弹出层
+        })
+        $("#close").click(function() {
+            cover.style.display="none";   //隐藏遮罩层
+            modal.style.display="none";   //隐藏弹出层
+        })
+    })
+</script>
+>>>>>>> Stashed changes
 <style type="text/css">
     #cover{
         position:absolute;
@@ -41,6 +56,7 @@
 
     }
 </style>
+<<<<<<< Updated upstream
 
 <script>
     $(document).ready(function(){
@@ -59,13 +75,25 @@
 <div id="body">
 </div>
 <div id="cover">
+=======
+<div id="body">
+    <div id="open"></div>
+</div>
+<div id="cover">
+
+>>>>>>> Stashed changes
 </div>
 <div id="modal">
     <div id="close">关闭弹框
        </div>
     <P> <span>
             您的个人信息不完全！建议您补全给人信息
+<<<<<<< Updated upstream
             </span></P>
+=======
+            </span>
+    </P>
+>>>>>>> Stashed changes
     <a href="#">前往补全个人信息</a>
 </div>
 

@@ -12,8 +12,8 @@
     <style>
         *{margin: 0;padding: 0;}
         img:hover{cursor: pointer;}
-        input{border: 1px steelblue solid;
-            height: 25px;
+        input,input[type='file']{border: 1px steelblue solid;
+            height: 33px;
             border-radius: 3px;
             text-align: center;
             margin: 10px;}
@@ -52,7 +52,7 @@
      <div style="vertical-align: middle;font-size: 18px;">
          <div style="display: inline-block;vertical-align: middlel;margin-right: 20px;">
              <img src="${employee.headimg}" alt="" width="350" id="img_btn" title="点击更换头像" class="img-circle">
-             <input type="file" id="file" name="headimg1" style="display: none;">
+             <input type="file" id="file" name="headimg1" style="width: 240px;">
          </div>
          <div style="display: inline-block;vertical-align: bottom">
 

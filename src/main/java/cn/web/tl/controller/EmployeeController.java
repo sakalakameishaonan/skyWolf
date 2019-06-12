@@ -4,8 +4,12 @@ import cn.web.tl.entity.Employee;
 import cn.web.tl.service.EmployeeService;
 import cn.web.tl.util.Constants;
 import cn.web.tl.util.FileUtil;
+import cn.web.tl.util.SFTPClientUtils;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.SftpException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +20,9 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.UUID;
 
 @Controller
 @RequestMapping("/sys")
@@ -23,6 +30,8 @@ public class EmployeeController {
 
     @Resource
     private EmployeeService service;
+    @Autowired
+    private SFTPClientUtils sftpClientUtils;
 
     private Logger logger = LoggerFactory.getLogger(EmployeeController.class);
 
@@ -42,16 +51,27 @@ public class EmployeeController {
     public String doUpdateEmp(Employee employee,HttpSession session, HttpServletRequest request,
                               @RequestParam(value = "headimg1", required = false)MultipartFile attach,
                                 Model model){
-        String newFile = FileUtil.fileUpload(request, attach);
-        employee.setHeadimg(newFile);
-        int i = service.updateEmp(employee);
-        if (i == 1){
-            session.setAttribute(Constants.USER_SESSION,service.getEmpById(employee.getEid()));
-            model.addAttribute("msg","修改成功");
-            return "/admin/userCenter";
-        } else {
-            model.addAttribute("msg","修改失败");
-            return "/admin/userCenter";
+
+        SFTPClientUtils sftp = new SFTPClientUtils("ubuntu","Xia1396128", "129.28.176.18", 22);
+        ChannelSftp channel = sftp.connect();
+        try {
+            channel.cd("/uploadfiles");
+            String path = "http://129.28.176.18/uploadfiles/";
+            String of = attach.getOriginalFilename();
+            String suffixName = of.substring(of.lastIndexOf("."));
+            of = UUID.randomUUID()+suffixName;
+            InputStream inputStream = attach.getInputStream();
+            channel.put(inputStream,of);
+            String address = path+of;
+            channel.disconnect();
+            channel.quit();
+            employee.setHeadimg(address);
+        } catch (SftpException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        int i = service.updateEmp(employee);
+        return "/admin/userCenter";
     }
 }

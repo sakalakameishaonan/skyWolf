@@ -1,8 +1,8 @@
 spring:
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://129.28.176.18:3306/tl_db?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+    password: xiaqing
+    url: jdbc:mysql://localhost:3306/tl_db?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 5
@@ -45,3 +45,12 @@ mybatis:
 pagehelper:
   helper-dialect: mysql
   reasonable: true
+sftp:
+  host: 129.28.176.18
+  port: 22
+  username: ubuntu
+  password: Xia1396128
+  #downloadSleep: 100 #文件下载失败下次超时重试时间
+  #downloadRetry: 10 #文件下载失败重试次数
+  #uploadSleep: 100 #文件上传失败下次超时重试时间
+  #uploadRettry: 10  #文件上传失败重试次数
